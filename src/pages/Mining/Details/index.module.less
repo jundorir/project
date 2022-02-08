@@ -1,0 +1,97 @@
+.contain {
+  color: #000000;
+  font-family: 'font';
+  font-size: 32px;
+  .none {
+    display: none;
+  }
+  .inner {
+    margin: auto;
+    width: 650px;
+    .content {
+      height: 436px;
+      background: #ffffff;
+      border-radius: 25px;
+      margin-top: 36px;
+      .top {
+        margin: 0 36px;
+        height: 328px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        &.notShow {
+          height: 213px;
+        }
+        .cow {
+          display: flex;
+          justify-content: space-between;
+          .unit {
+            font-size: 18px;
+          }
+          &.recow {
+            color: #999999;
+            .noCost {
+              width: 100%;
+              background: #fff6ec;
+              color: #ff8a0f;
+              height: 76px;
+              line-height: 76px;
+              padding-left: 30px;
+              font-size: 26px;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+      .line {
+        width: 650px;
+        height: 1px;
+        background: #ececec;
+      }
+      .more {
+        height: 106px;
+        margin: 0 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #999999;
+        .redeem {
+          width: 116px;
+          height: 56px;
+          border-radius: 20px;
+          border: 1px solid #3a3aff;
+          text-align: center;
+          line-height: 56px;
+          color: #3a3aff;
+        }
+      }
+    }
+    .content:nth-last-of-type(1) {
+      margin-bottom: 36px;
+    }
+    .nothing {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #a6a6a6;
+      .IMG {
+        width: 486px;
+        height: 262px;
+        margin-top: 120px;
+      }
+      .BTM{
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        font-size: 28px;
+        color: #a6a6a6;
+        margin-top: 40px;
+      }
+    }
+  }
+}
+.loading {
+  color: #000000;
+  margin: 30px;
+  font-size: 26px;
+}

@@ -1,0 +1,110 @@
+.ensurePledge {
+  font-family: 'font';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 0;
+  border-radius: 0;
+  background: rgba(17, 17, 17, 0.2);
+  transition: all 0.3s;
+  z-index: 99;
+  color: #000000;
+  font-size: 28px;
+  .ensurePledgeBox {
+    width: 600px;
+    height: 760px;
+    min-height: 320px;
+    background: #ffffff;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid transparent;
+    .closeImgBox {
+      margin: 36px;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: flex-end;
+      .closeImg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+  .title {
+    font-size: 36px;
+    font-family: PingFang SC;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+  }
+  .center {
+    width: 500px;
+    margin: auto;
+    font-size: 28px;
+    .hasPledged {
+      font-weight: 400;
+      color: #000000;
+      line-height: 40px;
+      margin: 40px 0 20px;
+    }
+    .pledgedShow {
+      width: 500px;
+      height: 180px;
+      background: #ececec;
+      border-radius: 10px;
+      line-height: 107px;
+      .pledgedShowNum {
+        height: 90px;
+        line-height: 90px;
+        margin: 0 26px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .line {
+        height: 1px;
+        background: #c9c9c9;
+        opacity: 0.3;
+      }
+    }
+    .pledgeTime,
+    .pledgeNum {
+      display: flex;
+      justify-content: space-between;
+      margin: 33px 0;
+    }
+    .line {
+      width: 500px;
+      height: 1px;
+      background: #c9c9c9;
+    }
+  }
+  .button {
+    display: flex;
+    .cancleButton {
+      width: 260px;
+      height: 92px;
+      background: #3ad4e2;
+      border-radius: 46px;
+      margin: auto;
+      color: #ffffff;
+      text-align: center;
+      line-height: 92px;
+      margin-top: 33px;
+    }
+    .ensureButton {
+      width: 260px;
+      height: 92px;
+      background: #3a3aff;
+      border-radius: 46px;
+      margin: auto;
+      color: #ffffff;
+      text-align: center;
+      line-height: 92px;
+      margin-top: 33px;
+    }
+  }
+}

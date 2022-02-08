@@ -1,0 +1,771 @@
+.lottery {
+  font-family: "font";
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  -webkit-user-select: none;
+
+  .banner {
+    height: 643px;
+    width: 100%;
+    background: #3a3aff;
+    border-radius: 0px 0px 120px 0px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 750px 765px;
+    background-position-y: -112px;
+    background-image: url("~@assets/images/lottery/banner.png");
+    .box {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 0 50px;
+      text-align: center;
+
+      .logo {
+        font-size: 48px;
+        font-weight: bold;
+        margin-top: 50px;
+        color: #f9f9f9;
+      }
+
+      .bonus {
+        margin-top: 25px;
+        font-size: 102px;
+        line-height: 102px;
+        font-weight: 600;
+        color: #f9f9f9;
+      }
+      .tips {
+        font-size: 26px;
+        font-weight: bold;
+        color: #f9f9f9;
+        opacity: 0.6;
+        margin-top: 30px;
+      }
+
+      .buyBox {
+        width: 372px;
+        height: 106px;
+        line-height: 100px;
+        background: #ffbb00;
+        box-sizing: border-box;
+        font-weight: bold;
+        font-size: 36px;
+        border-radius: 53px;
+        border: 2px solid white; /*no*/
+        margin: 50px auto 0;
+      }
+    }
+  }
+
+  .content {
+    height: 100%;
+    position: relative;
+    padding: 0 50px 65px 50px;
+    flex: 1;
+
+    .immediatelyBuyYourLotteryTicket {
+      background: #ffffff;
+      margin-top: -140px;
+      position: relative;
+      box-sizing: border-box;
+      padding: 50px 0 30px;
+      border-radius: 50px;
+      .topBox {
+        height: 299px;
+        background-image: url("~@assets/images/lottery/netBg.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        text-align: center;
+        .title {
+          color: #ff9c00;
+          font-size: 36px;
+          font-weight: bold;
+        }
+
+        .nextLotteryTime {
+          margin-top: 30px;
+          color: #333333;
+          font-weight: 600;
+          font-size: 28px;
+
+          .time {
+            width: 45px;
+            height: 53px;
+            line-height: 53px;
+            background: linear-gradient(0deg, #f39c12 0%, #ffd05f 100%);
+            border-radius: 10px;
+            font-size: 36px;
+            font-weight: bold;
+            color: #f2f3f8;
+            display: inline-block;
+            margin-left: 10px;
+            &.last {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      .bonusPool {
+        height: 602px;
+        background-image: url("~@assets/images/lottery/pool.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: -180px;
+        position: relative;
+        .poolBox {
+          width: 500px;
+          height: 290px;
+          position: absolute;
+          top: 80px;
+          left: 78px;
+          text-align: center;
+          .title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333333;
+            margin-top: 40px;
+          }
+          .price {
+            font-size: 80px;
+            line-height: 89px;
+            font-weight: bold;
+            color: #ff9c00;
+            margin-top: 25px;
+          }
+          .mmr {
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: bold;
+            color: #000000;
+            opacity: 0.3;
+            margin-top: 25px;
+          }
+        }
+      }
+
+      .myLotteryTicketNumber {
+        font-size: 28px;
+        color: #000000;
+        text-align: center;
+        margin-top: 48px;
+        .see {
+          color: #ff9c00;
+        }
+      }
+
+      .buy {
+        width: 500px;
+        height: 92px;
+        border-radius: 46px;
+        background: #3a3aff;
+        font-size: 30px;
+        line-height: 92px;
+        text-align: center;
+        font-weight: bold;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 30px;
+      }
+
+      .detailBox {
+        width: 100%;
+        background: #d9e1f2;
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        transition: all linear 0.15s;
+
+        &.show {
+          height: 950px;
+        }
+
+        .list {
+          padding: 45px 33px 30px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .tips {
+            font-weight: 600;
+            font-size: 26px;
+            color: #1f1f1f;
+            margin-bottom: 35px;
+            line-height: 30px;
+          }
+          .item {
+            width: 280px;
+            height: 176px;
+            margin-bottom: 25px;
+            background: #fff;
+            padding: 30px 0 0 30px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            .condition {
+              font-size: 30px;
+              line-height: 30px;
+              font-weight: 600;
+              color: #ff9c00;
+            }
+            .reward {
+              font-size: 30px;
+              line-height: 30px;
+              font-weight: 600;
+              color: #1f1f1f;
+              margin-top: 18px;
+            }
+            .price {
+              font-size: 24px;
+              line-height: 24px;
+              font-weight: 600;
+              color: #1f1f1f;
+              opacity: 0.5;
+              margin-top: 15px;
+            }
+          }
+
+          .destory {
+            width: 100%;
+            height: 176px;
+            background: #fff;
+            text-align: center;
+            padding: 30px 0;
+            box-sizing: border-box;
+            .condition {
+              font-size: 30px;
+              font-weight: bold;
+              color: #ff0000;
+              line-height: 30px;
+            }
+            .reward {
+              font-size: 30px;
+              font-weight: bold;
+              color: #1f1f1f;
+              line-height: 30px;
+              margin-top: 18px;
+            }
+            .price {
+              font-size: 24px;
+              font-weight: bold;
+              color: #1f1f1f;
+              opacity: 0.5;
+              margin-top: 15px;
+            }
+          }
+        }
+      }
+
+      .detail {
+        font-size: 26px;
+        color: #1f1f1f;
+        opacity: 0.5;
+        text-align: center;
+        &.show {
+          margin-top: 30px;
+        }
+      }
+    }
+
+    .history {
+      margin-top: 30px;
+      box-shadow: 0px 23px 40px 0px rgba(179, 179, 179, 0.13);
+      border-radius: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: white;
+      padding-bottom: 30px;
+
+      .title {
+        color: #ff9c00;
+        margin-top: 47px;
+        font-size: 36px;
+        font-weight: bold;
+      }
+
+      .tabs {
+        width: 100%;
+        height: 110px;
+        margin-top: 20px;
+        display: flex;
+        border-bottom: 1px solid #c4c4c4; /*no*/
+        justify-content: space-evenly;
+        .tab {
+          font-size: 30px;
+          font-weight: bold;
+          color: #1f1f1f;
+          opacity: 0.5;
+          height: 100%;
+          line-height: 110px;
+          position: relative;
+          &.selected {
+            opacity: 1;
+            .line {
+              width: 100%;
+              background: #ff9c00;
+              height: 8px;
+              border-radius: 4px;
+              position: absolute;
+              bottom: 0;
+            }
+          }
+        }
+      }
+
+      .record {
+        width: 100%;
+        .operation {
+          margin-top: 60px;
+          padding: 0 77px;
+          justify-content: space-between;
+          display: flex;
+          align-items: center;
+          .goLeft10,
+          .goRight10 {
+            width: 39px;
+            height: 43px;
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+
+          .goLeft1,
+          .goRight1 {
+            width: 36px;
+            height: 43px;
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+          .goLeft10 {
+            background-image: url("~@assets/images/lottery/goLeft.png");
+          }
+          .goLeft1 {
+            background-image: url("~@assets/images/lottery/left.png");
+          }
+          .issueNumber {
+            width: 104px;
+            height: 65px;
+            line-height: 65px;
+
+            font-size: 36px;
+            text-align: center;
+            background: linear-gradient(0deg, #f4566c 0%, #ff9ea3 100%);
+            border-radius: 10px;
+          }
+          .goRight1 {
+            background-image: url("~@assets/images/lottery/right.png");
+          }
+          .goRight10 {
+            background-image: url("~@assets/images/lottery/goRight.png");
+          }
+        }
+
+        .time {
+          margin-top: 45px;
+          font-size: 26px;
+          color: #1f1f1f;
+          text-align: center;
+        }
+
+        .empty {
+          width: 428px;
+          height: 254px;
+          background-image: url("~@assets/images/lottery/empty.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          margin: 70px auto 0;
+        }
+
+        .emptyTips {
+          font-size: 26px;
+          color: #1f1f1f;
+          opacity: 0.5;
+          margin-top: 40px;
+          text-align: center;
+        }
+      }
+
+      .historyRecord {
+        color: #1f1f1f;
+        padding: 0 22px;
+        box-sizing: border-box;
+        width: 100%;
+        margin-bottom: 30px;
+        .tips {
+          font-size: 30px;
+          font-weight: 600;
+          margin: 35px 0 35px 30px;
+        }
+        .head {
+          opacity: 0.5;
+          font-size: 26px;
+          display: flex;
+          margin-bottom: 30px;
+          padding: 0 25px;
+          box-sizing: border-box;
+
+          .round {
+            width: 135px;
+          }
+          .fullDate {
+            width: 230px;
+          }
+          .ticket {
+            width: 225px;
+          }
+        }
+        .list {
+          font-size: 24px;
+          height: 350px;
+          overflow: auto;
+          .item {
+            display: flex;
+            height: 104px;
+            margin-bottom: 17px;
+            align-items: center;
+            padding: 0 25px;
+            box-sizing: border-box;
+            background: #f5f8ff;
+            border-radius: 10px;
+            .round {
+              width: 135px;
+            }
+            .fullDate {
+              width: 230px;
+            }
+            .ticket {
+              width: 225px;
+              font-size: 26px;
+              display: flex;
+              justify-content: space-between;
+              .arrow {
+                background-image: url("~@assets/images/menu/right_arrow.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 13px;
+                height: 24px;
+                margin-left: 20px;
+              }
+            }
+          }
+        }
+      }
+
+      .historyRecordOne {
+        color: #1f1f1f;
+
+        .headBox {
+          padding: 0 14px;
+          margin-top: 25px;
+          box-sizing: border-box;
+
+          .head {
+            width: 100%;
+            height: 164px;
+            background: #f5f8ff;
+            display: flex;
+            align-items: center;
+            .back {
+              position: relative;
+              margin-left: 45px;
+              width: 20px;
+              height: 34px;
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-image: url("~@assets/images/home/arrow.png");
+              transform: rotate(180deg);
+            }
+            .roundInfo {
+              margin-left: 50px;
+              .round {
+                display: flex;
+                align-items: center;
+                .tips {
+                  font-size: 30px;
+                  font-weight: 600;
+                  color: #1f1f1f;
+                  margin-right: 20px;
+                }
+                .number {
+                  padding: 20px 25px;
+                  box-sizing: border-box;
+                  background: linear-gradient(0deg, #f39c12 0%, #ffd05f 100%);
+                  border-radius: 10px;
+                  color: #fff;
+                  font-size: 36px;
+                  font-weight: bold;
+                  color: #f2f3f8;
+                  line-height: 1;
+                }
+              }
+              .date {
+                font-size: 26px;
+                margin-top: 15px;
+                color: #1f1f1f;
+              }
+            }
+          }
+        }
+
+        .hasTicket {
+          display: flex;
+          align-items: center;
+          margin-top: 40px;
+          margin-bottom: 30px;
+          text-align: center;
+          padding: 0 92px;
+          justify-content: space-between;
+          .hasNumber {
+            font-size: 26px;
+            color: #1f1f1f;
+          }
+          .see {
+            width: 196px;
+            height: 58px;
+            background: linear-gradient(0deg, #f39c12 0%, #ffd05f 100%);
+            border-radius: 29px;
+            line-height: 58px;
+            text-align: center;
+            color: #fff;
+            font-size: 26px;
+          }
+        }
+      }
+    }
+
+    .rule {
+      width: 100%;
+      min-height: 3570px; // 3870px
+      background: #fff;
+      padding: 60px 0 30px;
+      box-shadow: 0px 23px 40px 0px rgba(179, 179, 179, 0.13);
+      border-radius: 50px;
+      margin-top: 30px;
+      .topBox {
+        height: 299px;
+        background-image: url("~@assets/images/lottery/netBg.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        text-align: center;
+        .title {
+          color: #ff9c00;
+          font-size: 36px;
+          font-weight: bold;
+        }
+
+        .tips {
+          margin-top: 35px;
+          color: #1f1f1f;
+          font-size: 26px;
+          padding: 0 79px;
+        }
+      }
+
+      .steps {
+        width: 100%;
+        padding: 0 32px 0 60px;
+
+        box-sizing: border-box;
+        margin-top: -100px;
+        .step {
+          width: 100%;
+          border-left: 1px solid #ff9c00; /*no*/
+          display: flex;
+          justify-content: flex-end;
+          position: relative;
+          padding-bottom: 60px;
+
+          &.last {
+            border-left: none;
+            padding-bottom: 80px;
+            border-bottom: 1px solid #dedede; /*no*/
+          }
+
+          .rank {
+            width: 56px;
+            height: 56px;
+            background: #ff9c00;
+            border-radius: 50%;
+            font-size: 30px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 56px;
+            position: absolute;
+            left: -28px;
+          }
+
+          .info {
+            width: 507px;
+            min-height: 175px;
+            border: 1px solid #ff9c00; /*no*/
+            box-sizing: border-box;
+            right: 0;
+            position: relative;
+            margin-top: 10px;
+            background: #fffaf1;
+            border-radius: 10px;
+            padding: 36px 0 30px 15px;
+            .title {
+              font-size: 30px;
+              font-weight: bold;
+              color: #1f1f1f;
+              line-height: 30px;
+            }
+            .tips {
+              font-size: 26px;
+              line-height: 26px;
+              margin-top: 20px;
+              color: #1f1f1f;
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+
+      .condition {
+        padding: 0 32px;
+        margin-top: 75px;
+        .title {
+          font-size: 30px;
+          font-weight: bold;
+          color: #1f1f1f;
+          text-align: center;
+        }
+        .tips {
+          font-size: 28px;
+          color: #1f1f1f;
+          text-align: center;
+          margin-top: 25px;
+        }
+
+        .example {
+          padding: 40px 27px;
+          background: #f4f5f7;
+          min-height: 870px;
+          margin-top: 60px;
+          .text {
+            opacity: 0.5;
+            color: #1f1f1f;
+            font-size: 24px;
+            line-height: 2;
+            margin-bottom: 60px;
+          }
+
+          .image {
+            margin: 0 auto;
+            width: 493px;
+            height: 299px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url("~@assets/images/lottery/example.png");
+          }
+        }
+      }
+
+      .bonus {
+        padding: 0 32px;
+        margin-top: 75px;
+        .title {
+          font-size: 30px;
+          font-weight: bold;
+          color: #1f1f1f;
+          text-align: center;
+        }
+        .tips {
+          font-size: 28px;
+          color: #1f1f1f;
+          text-align: center;
+          margin-top: 25px;
+        }
+      }
+
+      .bonusSteps {
+        width: 100%;
+        padding: 0 32px 0 60px;
+        box-sizing: border-box;
+        margin-top: 70px;
+        .step {
+          width: 100%;
+          border-left: 1px solid #ff9c00; /*no*/
+          display: flex;
+          justify-content: flex-end;
+          position: relative;
+          padding-bottom: 60px;
+
+          &.last {
+            border-left: none;
+            padding-bottom: 80px;
+          }
+
+          .rank {
+            width: 56px;
+            height: 56px;
+            background: #ff9c00;
+            border-radius: 50%;
+            font-size: 30px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 56px;
+            position: absolute;
+            left: -28px;
+          }
+
+          .info {
+            width: 507px;
+            min-height: 175px;
+            border: 1px solid #ff9c00; /*no*/
+            box-sizing: border-box;
+            right: 0;
+            position: relative;
+            margin-top: 10px;
+            background: #fffaf1;
+            border-radius: 10px;
+            padding: 36px 0 30px 15px;
+            .title {
+              font-size: 30px;
+              font-weight: bold;
+              color: #1f1f1f;
+              line-height: 30px;
+            }
+            .tips {
+              font-size: 26px;
+              line-height: 26px;
+              margin-top: 20px;
+              color: #1f1f1f;
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+
+      .share {
+        padding: 0 37px;
+        .top {
+          display: flex;
+          justify-content: space-between;
+          height: 50px;
+          font-size: 26px;
+          color: #1f1f1f;
+          opacity: 0.5;
+        }
+        .item {
+          height: 83px;
+          border-top: 1px solid #dedede; /*no*/
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 30px;
+          font-weight: bold;
+          .left {
+            color: #ff9c00;
+          }
+          .right {
+            color: #1f1f1f;
+          }
+        }
+      }
+    }
+  }
+}

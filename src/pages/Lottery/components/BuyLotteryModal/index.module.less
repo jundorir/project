@@ -1,0 +1,197 @@
+.getbackWindow {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 0;
+  border-radius: 0;
+  background: rgba(17, 17, 17, 0.2);
+  transition: all 0.3s;
+  z-index: 99;
+  color: #1f1f1f;
+  font-size: 24px;
+  font-family: "font";
+  line-height: 1;
+  .getbackBox {
+    width: 600px;
+    // max-height: 90vh;
+    height: 1160px;
+    background: #ffffff;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid transparent;
+    .closeImgBox {
+      margin-bottom: 0;
+      position: absolute;
+      right: 43px;
+      top: 58px;
+      .closeImg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+  .title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    margin-top: 68px;
+  }
+  .center {
+    width: 500px;
+    margin: auto;
+    font-size: 24px;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      .buy {
+        font-size: 24px;
+        color: #1f1f1f;
+        height: 26px;
+      }
+      .ticket {
+        display: flex;
+        align-items: center;
+        .text {
+          font-size: 24px;
+          color: #1f1f1f;
+          margin-right: 12px;
+        }
+        .icon {
+          width: 29px;
+          height: 26px;
+          background-image: url("~@assets/images/lottery/ticket.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+
+    .inputbox {
+      width: 100%;
+      height: 144px;
+      background: #ececec;
+      border: 1px solid rgba(58, 58, 255, 0.3); /*no*/
+      box-sizing: border-box;
+      border-radius: 10px;
+      margin: 16px 0 30px;
+      padding: 20px;
+      .input {
+        text-align: right;
+        border: none;
+        outline: none;
+        background: #ececec;
+        height: 60px;
+        // margin-left: 15px;
+        width: 100%;
+        font-family: "font";
+        font-size: 42px;
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+        }
+      }
+
+      .computedCost {
+        text-align: right;
+        width: 100%;
+        font-size: 24px;
+        opacity: 0.5;
+        margin-top: 10px;
+      }
+    }
+    .balance {
+      color: #1f1f1f;
+      margin: 20px 0 24px;
+      line-height: 24px;
+      opacity: 0.5;
+      font-family: "font";
+    }
+
+    .checkNumber {
+      display: flex;
+      margin-bottom: 40px;
+      justify-content: space-between;
+      .button {
+        width: 120px;
+        height: 62px;
+        background: #c0c0c0;
+        border-radius: 10px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 62px;
+      }
+    }
+
+    .cost,
+    .discount,
+    .needPay {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 28px;
+      align-items: center;
+      .left {
+        opacity: 0.5;
+      }
+    }
+
+    .needPay {
+      margin-bottom: 0;
+      .needPayRight {
+        font-size: 28px;
+        font-weight: 600;
+      }
+    }
+    .line {
+      width: 100%;
+      height: 1px;
+      background: #dddddd;
+      margin-bottom: 20px;
+    }
+    .quicklyBuy {
+      width: 100%;
+      height: 90px;
+      background: #3a3aff;
+      border-radius: 45px;
+      font-size: 30px;
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 90px;
+      text-align: center;
+      margin-top: 60px;
+      &.disabled {
+        color: #ececec;
+      }
+    }
+
+    .edit {
+      width: 100%;
+      height: 90px;
+      background: #fff;
+      border-radius: 45px;
+      font-size: 30px;
+      font-weight: 600;
+      color: #3a3aff;
+      line-height: 90px;
+      text-align: center;
+      margin-top: 25px;
+      box-sizing: border-box;
+      border: 1px solid #3a3aff; /*no*/
+      &.disabled {
+        color: #ececec;
+        pointer-events: none;
+      }
+    }
+    .content {
+      opacity: 0.5;
+      margin-top: 55px;
+      margin-bottom: 95px;
+    }
+  }
+}

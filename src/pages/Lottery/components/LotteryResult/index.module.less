@@ -1,0 +1,92 @@
+.time {
+  margin-top: 45px;
+  font-size: 26px;
+  color: #1f1f1f;
+  text-align: center;
+}
+.lotteryResultBox {
+  padding: 0 14px;
+  margin-top: 25px;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 30px;
+  color: #fff;
+  &.small {
+    padding: 0 43px;
+    .lotteryResult {
+      height: 170px;
+      border-radius: 30px;
+      .lotteryBallBox {
+        .ball {
+          width: 63px;
+          height: 63px;
+          line-height: 63px;
+        }
+      }
+    }
+  }
+  .lotteryResult {
+    background: #f5f8ff;
+    border-radius: 50px;
+    height: 218px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .head {
+      display: flex;
+      justify-content: center;
+      padding-top: 30px;
+      height: 38px;
+      .tips {
+        font-size: 30px;
+        font-weight: bold;
+        color: #1f1f1f;
+      }
+      .icon {
+        width: 46px;
+        height: 38px;
+        background-image: url("~@assets/images/lottery/newest.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: 12px;
+      }
+    }
+
+    .lotteryBallBox {
+      padding: 0 20px;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: space-between;
+      flex: 1;
+
+      .ball {
+        width: 80px;
+        height: 80px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        line-height: 80px;
+
+        &.ball0 {
+          background-image: url("~@assets/images/lottery/ball_0.png");
+        }
+        &.ball1 {
+          background-image: url("~@assets/images/lottery/ball_1.png");
+        }
+        &.ball2 {
+          background-image: url("~@assets/images/lottery/ball_2.png");
+        }
+        &.ball3 {
+          background-image: url("~@assets/images/lottery/ball_3.png");
+        }
+        &.ball4 {
+          background-image: url("~@assets/images/lottery/ball_4.png");
+        }
+        &.ball5 {
+          background-image: url("~@assets/images/lottery/ball_5.png");
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.contain {
+  margin: auto;
+  width: 650px;
+  border: solid transparent;
+  border-radius: 50px;
+  background: #ffffff;
+  color: #1f1f1f;
+  font-size: 26px;
+  margin-bottom: 40px;
+  padding: 33px;
+  box-sizing: border-box;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1f1f1f20;
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+    .continue {
+      font-size: 28px;
+      font-weight: 600;
+      color: #ff7676;
+      &.end {
+        color: #acacac;
+      }
+    }
+  }
+  .content {
+    font-size: 24px;
+    .title {
+      font-size: 30px;
+      font-weight: 600;
+      color: #1f1f1f;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 40px;
+      // margin-left: -15px;
+    }
+    .item {
+      margin-bottom: 30px;
+      .itemTitle {
+        color: #1f1f1f40;
+      }
+    }
+    .onlyafavor,
+    .onlyopposition {
+      width: 580px;
+      height: 40px;
+      background: linear-gradient(0deg, #266dfe 0%, #3ddbee 100%);
+      border-radius: 40px;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .onlyopposition {
+      background: linear-gradient(0deg, #f59000 0%, #ffce82 100%);
+    }
+    .noBar {
+      width: 580px;
+      height: 40px;
+      background: linear-gradient(0deg, #929292 0%, #bebebe 100%);
+      border-radius: 40px;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .progressBar {
+      display: flex;
+      width: 580px;
+      .favor,
+      .opposition {
+        height: 40px;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+        min-width: 80px;
+      }
+      .favor {
+        background: linear-gradient(0deg, #266dfe 0%, #3ddbee 100%);
+        border-radius: 20px 10px 10px 20px;
+      }
+      .opposition {
+        margin-left: 10px;
+        background: linear-gradient(0deg, #f59000 0%, #ffce82 100%);
+        border-radius: 10px 20px 20px 10px;
+      }
+    }
+    .vote {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+    }
+  }
+}

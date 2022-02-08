@@ -1,0 +1,131 @@
+.header {
+  width: 100%;
+  padding: 0 50px;
+  box-sizing: border-box;
+  background-color: #3a3aff;
+  position: fixed;
+  z-index: 99;
+  height: 112px;
+  .content {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    height: 112px;
+    color: white;
+    // border-bottom: 1px solid #ffffff66; /*no*/
+    box-sizing: border-box;
+    .box {
+      box-sizing: border-box;
+      margin: 0px;
+      min-width: 0px;
+      width: 100%;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      .left {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        .bar {
+          transition: transform 0.3s ease 0s;
+          cursor: pointer;
+          display: flex;
+          .image {
+            width: 46px;
+            height: 36px;
+            vertical-align: middle;
+          }
+        }
+        .line {
+          width: 1px;
+          height: 60px;
+          background-color: #2e2e2e;
+          margin: 0 19px;
+        }
+        .title {
+          display: flex;
+          -webkit-box-align: center;
+          align-items: center;
+          pointer-events: auto;
+          .logo {
+            transition: transform 0.3s ease 0s;
+            cursor: pointer;
+            .image {
+              width: 40px;
+              vertical-align: middle;
+              // margin-right: 10px;
+            }
+            @media screen and(max-width:374px) {
+              .image {
+                width: 36px;
+              }
+            }
+          }
+          .name {
+            box-sizing: border-box;
+            margin: 0px;
+            min-width: 0px;
+            display: flex;
+            padding: 0px;
+            -webkit-box-align: center;
+            align-items: center;
+            width: fit-content;
+            white-space: nowrap;
+            font-weight: bold;
+            font-size: 24px;
+          }
+        }
+      }
+      .right {
+        display: flex;
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+        .wallet {
+          font-size: 29px;
+          color: #3a3aff;
+          border-radius: 30px;
+          width: 263px;
+          background: #fff;
+          height: 60px;
+          line-height: 60px;
+          text-align: center;
+
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  &.roomHeader {
+    background-image: url("~@assets/images/DAO/directorIMG.png");
+    background-size: 750px 492px;
+    background-color: transparent;
+  }
+
+  &.lottery {
+    background-image: url("~@assets/images/lottery/banner.png");
+    background-size: 750px 765px;
+    background-color: transparent;
+  }
+  &.imageBg {
+    background-image: url("~@assets/images/DAO/directorIMG.png");
+    background-size: 750px 493px;
+    background-color: transparent;
+  }
+  &.forceMiningBg {
+    background-image: url("~@assets/images/forceMining/forceMingBI.png");
+    background-size: 750px 493px;
+    background-color: transparent;
+  }
+
+  &.computationalBg {
+    background-image: url("~@assets/images/computationalMining/banner.png");
+    background-size: 750px 493px;
+    background-color: transparent;
+  }
+}

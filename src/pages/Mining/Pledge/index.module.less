@@ -1,0 +1,200 @@
+.contain {
+  width: 650px;
+  margin: 20px auto;
+  font-size: 28px;
+  color: #333333;
+  .top {
+    margin: 30px auto;
+    background: #ffffff;
+    font-size: 28px;
+    width: 650px;
+    height: 240px;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 50px;
+    .inner {
+      // width: 580px;
+      margin: 30px auto;
+    }
+  }
+  .bottom {
+    width: 650px;
+    height: 640px;
+    background: #ffffff;
+    margin: 20px auto;
+    border-radius: 50px;
+    overflow: hidden;
+    .line {
+      width: 650px;
+      height: 1px;
+      background: #ececec;
+    }
+    .bottomInner {
+      width: 582px;
+      margin: 40px;
+      .chooseTimeTitle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .curChecked {
+          color: #3a3aff;
+          font-size: 28px;
+          font-weight: 500;
+        }
+        .curCheckedspan {
+          .curCheckedImg {
+            margin-left: 12px;
+            width: 22px;
+            height: 14px;
+            margin-bottom: 3px;
+          }
+        }
+      }
+      .number {
+        font-size: 30px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+      }
+      .box {
+        width: 580px;
+        height: 220px;
+        background: #f8f8f8;
+        margin: 28px 0;
+        border-radius: 25px;
+        border: 1px solid #d8d8d8;
+        .boxInner {
+          margin: 28px;
+          justify-content: space-between;
+          align-items: flex-end;
+          overflow: hidden;
+          .boxTop {
+            display: flex;
+            justify-content: space-between;
+            margin: 18px 0 50px;
+            .boxTopNum {
+              font-size: 48px;
+              font-weight: 600;
+              color: #c3c3c3;
+              .input {
+                height: 40px;
+                width: 80%;
+                outline: none;
+                border: none;
+                border-radius: 10px;
+                padding: 10px;
+                border-bottom: 1px solid #f8f8f8;
+                // color: #c3c3c3;
+                &::-webkit-inner-spin-button {
+                  -webkit-appearance: none;
+                }
+              }
+            }
+            .boxTopRight {
+              width: 116px;
+              height: 60px;
+              background: #3a3aff;
+              border-radius: 20px;
+              border: 1px solid #3a3aff;
+              text-align: center;
+              line-height: 60px;
+              font-weight: 500;
+              color: #ffffff;
+              cursor: pointer;
+            }
+          }
+          .boxBottom {
+            display: flex;
+            justify-content: space-between;
+            color: #333333;
+            .boxBottomBalance {
+              font-weight: 400;
+            }
+            .boxBottomNum {
+              font-size: 32px;
+              font-family: 'font';
+              font-weight: 600;
+              color: #3a3aff;
+              .balanceUnit {
+                color: #000000;
+                font-size: 26px;
+              }
+            }
+          }
+        }
+      }
+      .instructions {
+        border-radius: 25px;
+        background: #f8f8f8;
+        width: 580px;
+        overflow: hidden;
+        .instructionsInner {
+          margin: 24px;
+          font-size: 28px;
+        }
+      }
+      // 质押时间
+      .chooseTimeCenter {
+        display: flex;
+        margin: 50px 0;
+        .chooseTimeButton {
+          color: #999999;
+          font-family: 'font';
+          width: 120px;
+          height: 60px;
+          // background: #3a3aff;
+          border-radius: 30px;
+          border: 1px solid #999999;
+          text-align: center;
+          line-height: 60px;
+          font-weight: 500;
+          // color: #ffffff;
+          cursor: pointer;
+          margin-right: 20px;
+          &.checked {
+            border: 1px solid #3a3aff;
+            color: #ffffff;
+            background: #3a3aff;
+          }
+        }
+      }
+      .chooseTimeInfo {
+        font-family: 'font';
+        font-size: 26px;
+        color: #ff8a0f;
+        margin-top: 28px;
+        width: 560px;
+        height: 76px;
+        background: #fff6ec;
+        border-radius: 12px;
+        line-height: 76px;
+        padding-left: 20px;
+      }
+    }
+  }
+  .bottomButton {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    .authorizationBTN,
+    .pledgeBTN {
+      width: 312px;
+      height: 104px;
+      background: #3ad4e2;
+      border-radius: 52px;
+      text-align: center;
+      line-height: 104px;
+      font-weight: 600;
+      color: #ffffff;
+      cursor: pointer;
+      &.disabled {
+        background: #c3c3c3;
+        cursor: not-allowed;
+      }
+    }
+    .pledgeBTN {
+      background: #3a3aff;
+    }
+  }
+}

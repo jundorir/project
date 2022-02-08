@@ -1,0 +1,113 @@
+.community {
+  width: 100%;
+  height: 100%;
+  padding: 0 50px;
+  box-sizing: border-box;
+  color: #1f1f1f;
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 54px;
+    position: relative;
+    .titleL {
+      display: inline-block;
+      width: 6px;
+      height: 28px;
+      background: #3a3aff;
+      border-radius: 2px;
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  .emptyBox {
+    width: 486px;
+    height: 422px;
+    margin: 0 auto;
+    margin-top: 76px;
+    .empty {
+      width: 486px;
+      height: 262px;
+      background-image: url('~@assets/images/icon/nocommunity.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      // margin: 0 auto;
+      // margin-top: 100px;
+    }
+    .text {
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      font-size: 28px;
+      color: #a6a6a6;
+      margin-top: 40px;
+    }
+  }
+
+  .info {
+    background: #ffffff;
+    border-radius: 50px;
+    font-size: 26px;
+    width: 100%;
+    min-height: 260px;
+    margin-top: 40px;
+    box-sizing: border-box;
+    padding: 40px 35px;
+    .top {
+      border-bottom: 1px solid rgb(245, 237, 237);
+      padding-bottom: 24px;
+
+      // height: 112px;
+      .tips {
+        color: #a6a6a6;
+        font-size: 24px;
+      }
+
+      .content {
+        margin-top: 22px;
+        font-weight: 600;
+      }
+    }
+
+    .middle {
+      border-bottom: 1px solid rgb(245, 237, 237);
+      padding-bottom: 40px;
+      box-sizing: border-box;
+      // width: 250px;
+    }
+    .middle,
+    .bottom {
+      margin-top: 40px;
+      display: flex;
+
+      // align-items: center;
+      // width: 100%;
+      // justify-content: space-between;
+      .item {
+        width: 267.5px;
+        &.right {
+          border-left: 1px solid #dcdcdc; /*no*/
+          // text-align: right;
+          padding-left: 35px;
+          width: 302.5px;
+          box-sizing: border-box;
+        }
+        .tips {
+          color: #a6a6a6;
+          font-size: 24px;
+        }
+        .content {
+          margin-top: 22px;
+          font-size: 32px;
+        }
+      }
+    }
+  }
+  .loading {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    text-align: center;
+    font-family: 'Baloo-Da';
+  }
+}

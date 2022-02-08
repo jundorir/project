@@ -1,0 +1,125 @@
+.line {
+  height: 202px;
+  margin-top: 60px;
+  background: #f5f5f5;
+  border-radius: 30px;
+  padding: 0 30px 0 24px;
+  overflow: hidden;
+  transition: height 0.15s linear 0s;
+  &.open {
+    // height: 622px;
+    height: 420px;
+  }
+  .lineHeader {
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    align-items: center;
+    height: 100px;
+    .left {
+      display: flex;
+      align-items: center;
+      .icon_MMR {
+        background-image: url("~@assets/images/mobilityMining/mmr.png");
+        width: 45px;
+        height: 45px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 1;
+      }
+      .icon_MMRS {
+        background-image: url("~@assets/images/mobilityPool/MMRS.png");
+        width: 45px;
+        height: 45px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 1;
+      }
+      .icon_WFIL {
+        background-image: url("~@assets/images/mobilityMining/wfil.png");
+        width: 45px;
+        height: 45px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 1;
+      }
+      .icon_USDT {
+        background-image: url("~@assets/images/mobilityMining/usdt.png");
+        width: 45px;
+        height: 45px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: -20px;
+      }
+      .icon_T {
+        background-image: url("~@assets/images/mobilityPool/T.png");
+        width: 45px;
+        height: 45px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: -20px;
+      }
+
+      .text {
+        margin-left: 15px;
+      }
+    }
+
+    .right {
+      background-image: url("~@assets/images/icon/triangle.png");
+      width: 27px;
+      height: 21px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: transform 0.15s linear;
+      &.up {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .lineText {
+    border-top: 1px solid #d9d9d9; /*no*/
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+      font-size: 28px;
+    }
+    .right {
+      font-size: 30px;
+    }
+    &.amount {
+      .left {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .buttons {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 30px;
+    .increaseBtn,
+    .removeBtn {
+      width: 245px;
+      height: 80px;
+      border-radius: 40px;
+      background: #3a3aff;
+      line-height: 80px;
+
+      &.disabled {
+        background: #c3c3c3;
+        // pointer-events: none;
+      }
+    }
+
+    .removeBtn {
+      background: #28c9d7;
+    }
+  }
+}

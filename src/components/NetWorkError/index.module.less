@@ -1,0 +1,39 @@
+.network {
+  width: 600px;
+  height: 700px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 15px;
+  position: relative;
+
+  .box {
+    padding: 75px 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .error {
+      width: 328px;
+      height: 283px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("~@assets/images/networkError.png");
+    }
+
+    .title {
+      margin-top: 70px;
+      font-weight: bold;
+      font-size: 30px;
+      color: #1f1f1f;
+      margin-bottom: 32px;
+    }
+
+    .tips {
+      font-size: 26px;
+      color: #999999;
+      margin-bottom: 15px;
+    }
+  }
+}

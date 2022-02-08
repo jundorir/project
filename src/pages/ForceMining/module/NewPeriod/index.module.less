@@ -1,0 +1,451 @@
+.contain {
+  margin: auto;
+  width: 650px;
+  border: solid transparent;
+  border-radius: 50px;
+  background: #ffffff;
+  color: #1f1f1f;
+  font-size: 28px;
+  margin-bottom: 35px;
+  margin-top: 30px;
+  font-family: "font";
+  .inner {
+    margin: 0 38px 34px;
+    .lineone,
+    .linetwo,
+    .linethree,
+    .linefour,
+    .linefive,
+    .linesix {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 45px 0;
+      .lineoneR,
+      .linetwoR,
+      .linethreeR,
+      .linefourR {
+        font-size: 30px;
+        font-weight: 600;
+        color: #1f1f1f;
+      }
+    }
+    // .linesix {
+    //   .linesixL,
+    //   .linesixR {
+    //     height: 89px;
+    //     display: flex;
+    //     // flex-direction: column;
+    //     justify-content: space-between;
+    //     .top {
+    //       color: #1f1f1f55;
+    //     }
+    //     .bottom {
+    //       font-size: 32px;
+    //       font-weight: 600;
+    //     }
+    //   }
+    //   .linesixM {
+    //     width: 1px;
+    //     height: 89px;
+    //     background: #e2e2e2;
+    //   }
+    // }
+    .line {
+      width: 580px;
+      height: 1px;
+      background: #e6e6e6;
+    }
+    .lineone {
+      .lineoneL {
+        font-size: 30px;
+        font-weight: 600;
+        color: #ff7272;
+      }
+      .lineoneR {
+        width: 189px;
+        height: 40px;
+        font-size: 22px;
+        font-weight: 400;
+        color: #3a3aff;
+        border: 1px solid #3a3aff55;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .linefour {
+      background: #f0f0f0;
+      border-radius: 30px;
+      .linefourInner {
+        width: 100%;
+        margin: 50px 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .linefourL {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-size: 32px;
+          .price {
+            font-weight: 600;
+          }
+        }
+        .linefourR {
+          width: 128px;
+          height: 60px;
+          background: #3a3aff;
+          border-radius: 30px;
+          font-size: 24px;
+          font-weight: 600;
+          color: #ffffff;
+          line-height: 60px;
+          text-align: center;
+        }
+      }
+    }
+    .linefive {
+      background: #f0f0f0;
+      border-radius: 30px;
+      margin: 30px 0 35px;
+      position: relative;
+      overflow: hidden;
+      .product {
+        width: 580px;
+        height: 230px;
+        position: absolute;
+        top: 0;
+        background: url("~@assets/images/forceMining/product.png");
+        background-size: cover;
+        .productLine {
+          margin: 87px 0 0 40px;
+          .productLineOne {
+            font-size: 33px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 14px;
+          }
+          .productLineTwo {
+            font-size: 28px;
+            font-weight: 300;
+            color: #ffffff20;
+            letter-spacing: 5px;
+          }
+        }
+      }
+      .linefiveInner {
+        width: 100%;
+        margin: 50px 32px 20px;
+        .innerline {
+          width: 100%;
+          height: 1px;
+          background: #e6e6e6;
+          margin: 42px 0;
+        }
+        .current {
+          display: flex;
+          justify-content: space-between;
+          .currentL {
+            font-size: 30px;
+            font-weight: 600;
+          }
+          .currentR {
+            // font-weight: 400;
+            // color: #3a3aff;
+            width: 159px;
+            height: 40px;
+            border: 1px solid #bfbfbf;
+            border-radius: 20px;
+            font-size: 24px;
+            color: #1f1f1f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          // .soldR {
+          //   font-size: 30px;
+          //   font-weight: 600;
+          // }
+        }
+        .totalAndSold {
+          display: flex;
+          margin-bottom: 20px;
+          .sold,
+          .price {
+            width: 50%;
+            .soldL,
+            .priceL {
+              opacity: 0.5;
+              font-size: 26px;
+              margin-bottom: 10px;
+            }
+            .soldR,
+            .priceR {
+              font-size: 30px;
+              font-weight: 600;
+            }
+          }
+          .price {
+            margin-left: 60px;
+          }
+          .totalAndSoldLine {
+            width: 1px;
+            height: 70px;
+            background: #e7e7e7;
+          }
+        }
+        .left {
+          .leftT {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            .leftTR {
+              font-size: 30px;
+              font-weight: 600;
+            }
+          }
+          .leftB {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .leftBL {
+              width: 85%;
+              height: 22px;
+              background: #dfdfdf;
+              border-radius: 10px;
+              .leftBLInner {
+                height: 22px;
+                background: #3a3aff;
+                border-radius: 10px;
+                transition: width 0.5s linear 0s;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // 第一部分内容
+    .hasPledged,
+    .hasPledgedB {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 40px 0;
+      .hasPledgedTL {
+        font-weight: 600;
+      }
+      .hasPledgedTR {
+        width: 128px;
+        height: 60px;
+        background: #ffffff;
+        border: 1px solid #a2a2a2;
+        border-radius: 30px;
+        font-size: 24px;
+        font-weight: 600;
+        color: #1f1f1f;
+        line-height: 60px;
+        opacity: 0.5;
+        text-align: center;
+      }
+      .hasPledgedBL,
+      .hasPledgedBR {
+        width: 50%;
+        .hasPledgedBLT,
+        .hasPledgedBRT {
+          font-size: 36px;
+          font-weight: bold;
+          margin-bottom: 18px;
+        }
+        .hasPledgedBLB,
+        .hasPledgedBRB {
+          font-size: 24px;
+          font-weight: 400;
+          color: #1f1f1f;
+          opacity: 0.5;
+        }
+      }
+      .vertical {
+        width: 1px;
+        height: 82px;
+        background: #d2d2d2;
+        margin: 0 40px;
+      }
+    }
+
+    .detail {
+      background-color: #f5f5f5;
+      border-radius: 30px;
+      .list {
+        padding: 0 32px;
+        .head {
+          .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 28px;
+            height: 100px;
+            .left {
+              font-weight: 600;
+              color: #1f1f1f;
+            }
+            .right {
+              color: #ff7272;
+            }
+          }
+          .bottom {
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 24px;
+            color: rgba(31, 31, 31, 0.5);
+            border-top: 1px solid #e6e6e6; /*no*/
+          }
+        }
+
+        .item {
+          height: 100px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          font-size: 28px;
+          color: #1f1f1f;
+          border-top: 1px solid #e6e6e6; /*no*/
+
+          &.first {
+            border-top: none;
+          }
+
+          .right {
+            font-size: 30px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+.explainBox {
+  margin: auto;
+  width: 650px;
+  border: solid transparent;
+  border-radius: 50px;
+  background: #ffffff;
+  color: #1f1f1f;
+  font-size: 28px;
+  font-family: "font";
+  margin-bottom: 50px;
+
+  .swap {
+    color: #1f1f1f;
+    padding: 50px 35px 15px;
+
+    .hotTips {
+      padding: 0 32px;
+      margin-top: 47px;
+      line-height: 97px;
+      background-color: rgba(236, 236, 236, 0.3);
+      font-size: 28px;
+      color: rgba(3, 51, 51, 0.5451);
+      .context {
+        font-weight: 600;
+        color: #033333;
+        margin-left: 30px;
+      }
+    }
+
+    .inputBox {
+      width: 100%;
+      height: 100px;
+      padding-right: 195px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      box-sizing: border-box;
+      border: 1px solid rgba(58, 58, 255, 0.3);
+      border-radius: 10px;
+      margin-top: 47px;
+      margin-bottom: 45px;
+      &.hotKey {
+        margin-top: 30px;
+      }
+
+      .input {
+        width: 100%;
+        border: none;
+        font-size: 28px;
+        padding-left: 20px;
+      }
+
+      .symbol {
+        font-size: 28px;
+        color: #1f1f1f;
+        position: absolute;
+        right: 155px;
+      }
+
+      .max {
+        width: 120px;
+        height: 60px;
+        background: #c0c0c0;
+        font-size: 30px;
+        line-height: 60px;
+        text-align: center;
+        border-radius: 10px;
+        position: absolute;
+        right: 15px;
+        color: #fff;
+      }
+
+      &.full {
+        padding: 0 30px 0 30px;
+      }
+    }
+
+    .balance {
+      margin-bottom: 50px;
+      font-size: 24px;
+      color: rgba(31, 31, 31, 0.5);
+      &.need {
+        margin-bottom: 30px;
+      }
+    }
+
+    .button {
+      font-size: 30px;
+      font-weight: 600;
+      color: #ffffff;
+      background: #3a3aff;
+      border-radius: 45px;
+      height: 90px;
+      line-height: 90px;
+      width: 100%;
+      text-align: center;
+      &.disabled {
+        background: #c3c3c3;
+        cursor: not-allowed;
+        pointer-events: none;
+      }
+    }
+  }
+
+  .explain {
+    color: #1f1f1f;
+    padding: 50px 35px;
+
+    .head {
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 60px;
+    }
+    .explainText {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+  }
+}

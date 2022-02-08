@@ -1,0 +1,291 @@
+.contain {
+  width: 650px;
+  color: #1f1f1f;
+  background: #ffffff;
+  border-radius: 50px;
+  // font-family: "font";
+  margin: auto;
+  padding: 50px 35px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1f1f1f20;
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+
+    .num {
+      color: #3a3aff;
+      font-size: 30px;
+      font-family: PingFang SC;
+      font-weight: 600;
+      color: #3a3aff;
+    }
+
+    .continue {
+      font-size: 28px;
+      font-weight: 600;
+      color: #ff7676;
+
+      &.end {
+        color: #acacac;
+      }
+    }
+  }
+
+  .content {
+    font-size: 24px;
+
+    .title {
+      font-size: 30px;
+      font-weight: 600;
+      color: #1f1f1f;
+      margin-bottom: 40px;
+    }
+
+    .info {
+    }
+
+    .itemBox {
+      width: 583px;
+      height: 135px;
+      background: #f8f4f4;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-top: 30px;
+
+      .item {
+        margin-left: 30px;
+
+        .itemTitle {
+          color: #1f1f1f40;
+        }
+      }
+    }
+
+    .describe {
+      margin: 40px 0;
+
+      .describeTitle {
+        margin-bottom: 30px;
+      }
+    }
+
+    .onlyafavor,
+    .onlyopposition {
+      width: 577px;
+      height: 80px;
+      background: linear-gradient(0deg, #266dfe 0%, #3ddbee 100%);
+      border-radius: 40px;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .onlyopposition {
+      background: linear-gradient(0deg, #f59000 0%, #ffce82 100%);
+    }
+
+    .noBar {
+      width: 577px;
+      height: 80px;
+      background: linear-gradient(0deg, #929292 0%, #bebebe 100%);
+      border-radius: 40px;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .progressBar {
+      display: flex;
+      width: 580px;
+
+      .favor,
+      .opposition {
+        height: 80px;
+        max-width: 500px;
+        min-width: 80px;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .favor {
+        background: linear-gradient(0deg, #266dfe 0%, #3ddbee 100%);
+        border-radius: 40px 8px 8px 40px;
+      }
+
+      .opposition {
+        margin-left: 10px;
+        background: linear-gradient(0deg, #f59000 0%, #ffce82 100%);
+        border-radius: 9px 40px 40px 9px;
+      }
+    }
+
+    .vote {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .line {
+      width: 100%;
+      height: 1px;
+      background: #1f1f1f;
+      opacity: 0.2;
+      margin: 40px 0;
+    }
+
+    .check {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .choose {
+        display: flex;
+      }
+      .left,
+      .right {
+        display: flex;
+        align-items: center;
+
+        .yes,
+        .no {
+          width: 38px;
+          height: 38px;
+          background: #f8f4f4;
+          border: 1px solid #d5d5d550;
+          border-radius: 50%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 4px;
+          box-sizing: border-box;
+          margin-right: 16px;
+          // margin-left: 10px;
+
+          .yesInner,
+          .noInner {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // transition: all linear 0.2s;
+            // font-size: 20px;
+
+            &.nochoose {
+              background: none;
+            }
+          }
+
+          .noInner {
+            background: linear-gradient(0deg, #f59000 0%, #ffce82 100%);
+          }
+
+          .yesInner {
+            background: linear-gradient(0deg, #266dfe 0%, #3ddbee 100%);
+          }
+        }
+      }
+      .left{
+        margin-right: 25px;
+      }
+    }
+
+    .toVote {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .tickets {
+        margin: 40px 0;
+        font-size: 30px;
+      }
+
+      .checkRight {
+        width: 211px;
+        height: 60px;
+        background: #f8f4f4;
+        border: 1px solid #d5d5d550;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 30px;
+
+        .input {
+          width: 111px;
+          outline: none;
+          border: none;
+          background: #f8f4f4;
+          text-align: center;
+
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+          }
+        }
+
+        .reduce,
+        .add {
+          line-height: 60px;
+          height: 60px;
+          width: 50px;
+          text-align: center;
+          color: #1f1f1f;
+        }
+
+        .reduce {
+          border-right: 1px solid #d5d5d5;
+        }
+
+        .add {
+          border-left: 1px solid #d5d5d5;
+        }
+      }
+    }
+
+    .buttonBox {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .button {
+      width: 45%;
+      height: 90px;
+      background: #3a3aff;
+      border-radius: 45px;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40px 0;
+
+      &.disabled {
+        background: #d5d5d5;
+      }
+    }
+
+    .nowCheck {
+      font-size: 24px;
+      font-weight: 500;
+      color: #1f1f1f;
+      line-height: 38px;
+      opacity: 0.6;
+      text-align: center;
+
+      &.no {
+        opacity: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.contain {
+  margin: auto;
+  width: 650px;
+  height: 350px;
+  overflow: hidden;
+  color: #ffffff;
+  font-size: 26px;
+  background-image: url("~@assets/images/plan/mmrsGainIMG.png");
+  background-size: 650px 350px;
+  background-repeat: no-repeat;
+  position: relative;
+  .inner {
+    margin: 50px 35px 0;
+    .top {
+      font-size: 28px;
+      display: flex;
+      justify-content: flex-start;
+      .topL {
+        .current {
+          font-size: 24px;
+          z-index: 1;
+          margin-bottom: 10px;
+        }
+        .title,
+        .mmrNum,
+        .dollar {
+          margin-bottom: 20px;
+        }
+        .mmrNum {
+          max-width: 400px;
+          overflow: hidden;
+          .number {
+            font-size: 48px;
+            line-height: 48px;
+            font-family: "font";
+            font-weight: bold;
+            margin-top: 30px;
+            margin-right: 10px;
+          }
+        }
+        .dollar {
+          margin-top: 15px;
+          color: #ffffff50;
+          font-size: 26px;
+        }
+      }
+    }
+    .line {
+      width: 100%;
+      height: 1px;
+      background: #ffffff40;
+      margin-top: 15px;
+    }
+    .bottom {
+      margin: 42px 0;
+      max-width: 75%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-family: "font";
+    }
+  }
+  .button {
+    width: 128px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #f59306;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    position: absolute;
+    right: 35px;
+    top: 63px;
+  }
+}

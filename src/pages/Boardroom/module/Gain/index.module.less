@@ -1,0 +1,91 @@
+.contain {
+  margin: auto;
+  margin-top: -123px;
+  width: 686px;
+  height: 346px;
+  border: solid transparent;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 26px;
+  background-image: url('~@assets/images/DAO/gainIMG.png');
+  background-size: 686px 346px;
+  background-repeat: no-repeat;
+  position: relative;
+  .inner {
+    margin: 55px;
+    margin-top: 30px;
+    .top {
+      font-size: 28px;
+      display: flex;
+      justify-content: space-between;
+      .topL {
+        .current{
+          font-size: 24px;
+          z-index: 1;
+          margin-bottom: 10px;
+        }
+        .one,
+        .two,
+        .three {
+          margin-bottom: 20px;
+        }
+        .two {
+          .number {
+            margin-right: 18px;
+            font-size: 48px;
+            font-family: 'font';
+            font-weight: bold;
+          }
+        }
+        .three{
+          margin-top: 15px;
+          color: rgba(256, 256, 256, 0.6);
+          font-size: 26px;
+          line-height: 26px;
+        }
+      }
+      .topR {
+        display: flex;
+      }
+    }
+    .topRImg {
+      // margin-top: 10px;
+      position: absolute;
+      right: 50px;
+      top: 48px;
+      width: 105px;
+      height: 105px;
+      background-image: url('~@assets/images/DAO/mrich.png');
+      background-size: 105px 105px;
+    }
+    .line {
+      width: 583px;
+      height: 1px;
+      background: #ffffff;
+      opacity: 0.4;
+    }
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 22px 0;
+      .bottomL {
+        max-width: 75%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .bottomR {
+        width: 128px;
+        height: 60px;
+        background: #ffffff;
+        border-radius: 30px;
+        font-weight: 600;
+        color: #3a3aff;
+        text-align: center;
+        line-height: 60px;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.contain {
+  margin: auto;
+  width: 650px;
+  border: solid transparent;
+  border-radius: 50px;
+  background: #ffffff;
+  color: #1f1f1f;
+  font-size: 26px;
+  margin-bottom: 40px;
+  .inner {
+    margin: 0 38px;
+    .lineone,
+    .linetwo,
+    .linethree,
+    .linefour,
+    .linefive {
+      height: 110px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .lineoneR,
+      .linetwoR,
+      .linethreeR,
+      .linefourR {
+        font-size: 30px;
+        font-family: font;
+        font-weight: 600;
+        color: #1f1f1f;
+      }
+    }
+    .line {
+      width: 100%;
+      height: 1px;
+      background: #e6e6e6;
+    }
+    .lineone {
+      .lineoneL {
+        font-size: 30px;
+        font-weight: 600;
+        color: #1f1f1f;
+      }
+      .lineoneR {
+        display: flex;
+        .picOne {
+          width: 58px;
+          height: 58px;
+          background-image: url('~@assets/images/DAO/mr.png');
+          background-size: 58px;
+          z-index: 1;
+          margin-right: -22px;
+        }
+        .picTwo {
+          width: 58px;
+          height: 58px;
+          background-image: url('~@assets/images/DAO/USDT.png');
+          background-size: 58px;
+        }
+      }
+    }
+    .linefour {
+      background: #f0f0f060;
+      border-radius: 10px;
+      .linefourInner {
+        width: 100%;
+        height: 70px;
+        margin: 40px 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .linefourL {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          & > div {
+            line-height: 38px;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+    .linefive {
+      // height: 160px;
+      display: flex;
+      justify-content: space-between;
+      margin: 35px 0;
+      .buttonL,
+      .buttonR {
+        width: 274px;
+        height: 90px;
+        background: #3ad4e2;
+        border-radius: 45px;
+        text-align: center;
+        line-height: 90px;
+        font-weight: 600;
+        color: #ffffff;
+        cursor: pointer;
+        &.notAllow {
+          background: #e2e2e2;
+          color: #a1a0a0;
+        }
+        // &.disabled {
+        //   background: #c3c3c3;
+        //   cursor: not-allowed;
+        // }
+      }
+      .buttonR {
+        background: #3a3aff;
+      }
+    }
+  }
+}

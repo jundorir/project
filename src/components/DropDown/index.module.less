@@ -1,0 +1,114 @@
+.dropDown {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  cursor: pointer;
+  width: 186px;
+  height: 61px;
+  user-select: none;
+  border-radius: 8px;
+  font-size: 30px;
+
+  .selected {
+    font-weight: 700;
+    width: 100%;
+    color: #1F1F1F;
+    display: flex;
+    align-items: center;
+    .icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    .right {
+      background-image: url("~@assets/images/icon/triangle.png");
+      width: 21px;
+      height: 17px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      right: 18px;
+      transition: transform 0.15s linear;
+      &.up {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .dropDownBox {
+    position: absolute;
+    top: 61px;
+    bottom: initial;
+    left: initial;
+    right: 0px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: none;
+    min-width: 186px;
+    max-width: 300px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.1s ease 0s;
+    z-index: 5;
+    opacity: 1;
+    box-shadow: 0px 23px 40px 0px rgba(179, 179, 179, 0.13);
+    overflow: auto;
+    &.open {
+      max-height: 370px;
+    }
+    .ul {
+      margin: 0px;
+      padding: 0 10px;
+      .li {
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        color: rgba(31, 31, 31, 0.5);
+
+        line-height: 75px;
+        padding: 5px 0;
+        // width: 110px;
+        font-weight: bold;
+        border-bottom: 1px solid rgba(56, 54, 137, 0.1);
+        &.last {
+          border-bottom: none;
+        }
+        &.active {
+          // background: #101010;
+          // color: #ffffff;
+        }
+        .item {
+          box-sizing: border-box;
+          margin: 0px;
+          min-width: 0px;
+          width: 100%;
+          display: flex;
+          padding: 0px;
+          -webkit-box-align: center;
+          align-items: center;
+          .icon {
+            width: 48px;
+            height: 48px;
+            margin-right: 14px;
+            // margin-left: 14px;
+          }
+
+          .text {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}

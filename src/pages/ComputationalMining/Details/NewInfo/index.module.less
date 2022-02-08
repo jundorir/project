@@ -1,0 +1,102 @@
+.newInfo {
+  color: #1f1f1f;
+  font-size: 28px;
+
+  .list {
+    .item {
+      display: flex;
+      justify-content: space-between;
+      height: 120px;
+      line-height: 120px;
+      border-top: 1px solid #eaeaeaff; /*no*/
+      &.first {
+        border-top: none;
+      }
+
+      .right {
+        font-size: 30px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .price {
+    margin-top: 35px;
+    height: 400px;
+    background: rgba(240, 240, 240, 0.6);
+    border-radius: 30px;
+    padding: 0 40px;
+
+    .top {
+      height: 295px;
+      padding-top: 50px;
+      box-sizing: border-box;
+      line-height: 1;
+      position: relative;
+      .number {
+        font-size: 48px;
+        font-weight: bold;
+        font-family: "font";
+        margin-top: 30px;
+      }
+      .button {
+        position: absolute;
+        right: 0;
+        top: 53px;
+        height: 70px;
+        background: #3a3aff;
+        border-radius: 35px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 26px;
+        width: 150px;
+        text-align: center;
+        line-height: 70px;
+      }
+
+      .saleProgress {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        .bar {
+          width: 100%;
+          height: 20px;
+          background: #cde5fb;
+          border-radius: 10px;
+          margin: 0 auto;
+          .cover {
+            background: #3a16ff;
+            height: 20px;
+            border-radius: 10px;
+          }
+        }
+        .percent {
+          font-size: 24px;
+          color: #3a3aff;
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .bottom {
+      height: 105px;
+      box-sizing: border-box;
+      border-top: 1px solid rgba(187, 187, 187, 0.34);
+      padding-top: 30px;
+      font-size: 26px;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+
+    .copy {
+      width: 24px;
+      height: 28px;
+      background-image: url("~@assets/images/computationalMining/copy.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}

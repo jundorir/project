@@ -1,0 +1,120 @@
+.getbackWindow {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 0;
+  border-radius: 0;
+  background: rgba(17, 17, 17, 0.2);
+  transition: all 0.3s;
+  z-index: 99;
+  color: #000000;
+  font-size: 28px;
+  .getbackBox {
+    width: 600px;
+    min-height: 320px;
+    background: #ffffff;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid transparent;
+    .closeImgBox {
+      margin: 36px;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: flex-end;
+      .closeImg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+  .title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    margin-top: 14px;
+  }
+  .center {
+    width: 500px;
+    margin: auto;
+    font-size: 28px;
+    .inputbox {
+      width: 100%;
+      height: 97px;
+      background: #ececec;
+      border: 1px solid #3A3AFF;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 54px 0 30px;
+      .input {
+        border: none;
+        outline: none;
+        background: #ececec;
+        height: 60px;
+        margin-left: 15px;
+        width: 300px;
+        font-family: 'font';
+        font-size: 42px;
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+        }
+      }
+      .max {
+        width: 120px;
+        height: 62px;
+        background: #c0c0c0;
+        border-radius: 10px;
+        margin-right: 15px;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 62px;
+      }
+    }
+    .balance {
+      color: #1F1F1F;
+      font-size: 24px;
+      margin: 30px 0 60px;
+      line-height: 40px;
+      font-family: 'font';
+    }
+  }
+  .button {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 67px;
+    .cancleButton {
+      width: 235px;
+      height: 92px;
+      background: #3ad4e2;
+      border-radius: 46px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 92px;
+      &.disabled {
+        background: #c3c3c3;
+        pointer-events: none;
+      }
+    }
+    .ensureButton {
+      width: 235px;
+      height: 92px;
+      background: #3a3aff;
+      border-radius: 46px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 92px;
+      &.disabled {
+        background: #c3c3c3;
+        pointer-events: none;
+      }
+    }
+  }
+}

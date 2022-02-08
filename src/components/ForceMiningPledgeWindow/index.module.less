@@ -1,0 +1,136 @@
+.getbackWindow {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 0;
+  border-radius: 0;
+  background: rgba(17, 17, 17, 0.2);
+  transition: all 0.3s;
+  z-index: 99;
+  color: #1f1f1f;
+  font-size: 24px;
+  font-family: 'font';
+  .getbackBox {
+    width: 600px;
+    max-height: 90vh;
+    overflow: auto;
+    background: #ffffff;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid transparent;
+    .closeImgBox {
+      margin: 36px;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: flex-end;
+      .closeImg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+  .title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    margin-top: 14px;
+  }
+  .center {
+    width: 500px;
+    margin: auto;
+    font-size: 24px;
+    .inputbox {
+      width: 100%;
+      // height: 97px;
+      background: #ececec13;
+      border: 1px solid #3a3aff33;
+      border-radius: 50px;
+      margin: 36px 0;
+      .inputboxInner {
+        width: 90%;
+        margin: auto;
+        .inputboxInnerT,
+        .inputboxInnerB {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 27px 0;
+          .input {
+            border: none;
+            outline: none;
+            background: #ececec13;
+            // height: 60px;
+            width: 300px;
+            font-family: 'font';
+            font-size: 42px;
+            &::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+            }
+          }
+          .max {
+            width: 118px;
+            height: 57px;
+            background: #c3c3c3;
+            border-radius: 29px;
+            font-size: 30px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 57px;
+          }
+          .balance {
+            color: #00000055;
+            // margin: 30px 0 60px;
+            line-height: 40px;
+          }
+          .balanceNum {
+            font-size: 30px;
+            font-weight: bold;
+          }
+        }
+        .inputboxInnerB {
+        }
+        .divider {
+          width: 100%;
+          height: 1px;
+          background: #c4c4c4;
+          opacity: 0.3;
+        }
+      }
+    }
+    .center {
+      margin: auto;
+      width: 89px;
+      height: 89px;
+      background: #ffffff;
+      box-shadow: 0px 23px 40px 0px rgba(179, 179, 179, 0.13);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .addIMG {
+        width: 30px;
+        height: 30px;
+        background-image: url('~@assets/images/icon/add.png');
+        background-size: 30px;
+      }
+    }
+    .buy {
+      width: 100%;
+      height: 90px;
+      background: #3a3aff;
+      border-radius: 45px;
+      font-size: 30px;
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 90px;
+      text-align: center;
+      margin: 36px 0 64px;
+    }
+  }
+}

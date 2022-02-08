@@ -1,0 +1,52 @@
+.gainWindow {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 0;
+  border-radius: 0;
+  background: rgba(17, 17, 17, 0.2);
+  transition: all 0.3s;
+  z-index: 99;
+  color: #000000;
+  font-size: 28px;
+  .gainBox {
+    width: 600px;
+    height: 660px;
+    min-height: 320px;
+    background: #ffffff;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid transparent;
+    .closeImgBox {
+      margin: 36px;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: flex-end;
+      .closeImg{
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+  .logImg {
+    width: 329px;
+    height: 329px;
+    margin: 60px auto;
+    .img{
+      width: 329px;
+      height: 329px;
+    }
+  }
+  .title {
+    font-size: 32px;
+    font-family: PingFang SC;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+  }
+}

@@ -1,0 +1,144 @@
+.getbackWindow {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 0;
+  border-radius: 0;
+  background: rgba(17, 17, 17, 0.2);
+  transition: all 0.3s;
+  z-index: 98;
+  color: #1f1f1f;
+  font-size: 24px;
+  font-family: 'font';
+  .getbackBox {
+    width: 600px;
+    max-height: 90vh;
+    overflow: auto;
+    background: #ffffff;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid transparent;
+    .closeImgBox {
+      margin: 36px;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: flex-end;
+      .closeImg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+  .title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .center {
+    width: 500px;
+    margin: auto;
+    font-size: 24px;
+    .inputbox {
+      width: 100%;
+      // height: 97px;
+      background: #ececec;
+      border: 1px solid #3a3aff33;
+      border-radius: 10px;
+      margin: 54px 0 30px;
+      .inputboxInner {
+        width: 90%;
+        margin: auto;
+        .inputboxInnerT,
+        .inputboxInnerB {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 27px 0;
+          .input {
+            border: none;
+            outline: none;
+            background: #ececec;
+            // height: 60px;
+            width: 300px;
+            font-family: 'font';
+            font-size: 42px;
+            &::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+            }
+          }
+          .max {
+            width: 120px;
+            height: 50px;
+            background: #c0c0c0;
+            border-radius: 25px;
+            // margin-right: 15px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 50px;
+          }
+          .balance {
+            font-size: 20px;
+            color: #00000055;
+            // margin: 30px 0 60px;
+            line-height: 40px;
+            font-family: 'font';
+          }
+        }
+        .inputboxInnerB {
+        }
+        .divider {
+          width: 100%;
+          height: 1px;
+          background: #c4c4c4;
+          opacity: 0.3;
+        }
+      }
+    }
+    .price,
+    .income {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 28px;
+      .left {
+      }
+      .priceRight,
+      .incomeRight {
+        font-size: 30px;
+        font-weight: 600;
+      }
+    }
+    .line {
+      width: 100%;
+      height: 1px;
+      background: #dddddd;
+      margin-bottom: 28px;
+    }
+    .start {
+      width: 100%;
+      height: 90px;
+      background: #3a3aff;
+      border-radius: 45px;
+      font-size: 30px;
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 90px;
+      text-align: center;
+      margin: 36px 0;
+      &.disabled {
+        background: #e6e6e6;
+        color: #0008;
+      }
+    }
+    .content {
+      opacity: 0.5;
+      margin-bottom: 55px;
+    }
+  }
+}

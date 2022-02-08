@@ -1,0 +1,158 @@
+.getbackWindow {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 0;
+  border-radius: 0;
+  background: rgba(17, 17, 17, 0.2);
+  transition: all 0.3s;
+  z-index: 99;
+  color: #000000;
+  font-size: 28px;
+  .getbackBox {
+    width: 600px;
+    // height: 920px;
+    min-height: 320px;
+    background: #ffffff;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid transparent;
+    .closeImgBox {
+      margin: 36px;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: flex-end;
+      .closeImg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+  .title {
+    width: 500px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #000000;
+    margin: auto;
+  }
+  .center {
+    width: 500px;
+    margin: auto;
+    font-size: 28px;
+    font-family: "font";
+    .poolToken {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      .poolTokenL {
+        .poolTokenLTop {
+          font-size: 42px;
+          font-weight: 600;
+        }
+        .poolTokenLButtom {
+          font-size: 24px;
+          opacity: 0.5;
+          margin: 24px 0;
+        }
+      }
+      .poolTokenR {
+        display: flex;
+        .icon_MMR {
+          width: 58px;
+          height: 58px;
+          background-image: url("~@assets/images/DAO/mr.png");
+          background-size: 58px;
+          z-index: 1;
+          margin-right: -22px;
+        }
+        .icon_WFIL {
+          background-image: url("~@assets/images/mobilityMining/wfil.png");
+          width: 58px;
+          height: 58px;
+          background-repeat: no-repeat;
+          background-size: 58px;
+          z-index: 1;
+          margin-right: -22px;
+        }
+        .icon_USDT {
+          width: 58px;
+          height: 58px;
+          background-image: url("~@assets/images/DAO/USDT.png");
+          background-size: 58px;
+        }
+        .icon_T {
+          width: 58px;
+          height: 58px;
+          background-image: url("~@assets/images/mobilityPool/T.png");
+          background-size: 58px;
+        }
+      }
+    }
+    .instructions {
+      font-size: 24px;
+      color: #ff2828;
+      margin: 24px 0;
+      line-height: 40px;
+    }
+    .supplied {
+      height: 90px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .right {
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+    .line {
+      width: 100%;
+      height: 1px;
+      background: #c9c9c9;
+      opacity: 0.5;
+    }
+    .share {
+      width: 100%;
+      background: #f1f1f1;
+      height: 140px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .shareTitle {
+        margin-bottom: 23px;
+        opacity: 0.5;
+      }
+    }
+  }
+  .button {
+    width: 500px;
+    margin: 50px auto;
+    display: flex;
+    .cancleButton {
+      width: 235px;
+      height: 90px;
+      background: #3ad4e2;
+      border-radius: 46px;
+      margin: auto;
+      color: #ffffff;
+      text-align: center;
+      line-height: 92px;
+    }
+    .ensureButton {
+      width: 235px;
+      height: 90px;
+      background: #3a3aff;
+      border-radius: 46px;
+      margin: auto;
+      color: #ffffff;
+      text-align: center;
+      line-height: 92px;
+    }
+  }
+}

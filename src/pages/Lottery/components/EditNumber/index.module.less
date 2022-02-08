@@ -1,0 +1,118 @@
+.editNumber {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 0;
+  border-radius: 0;
+  background: rgba(17, 17, 17, 0.2);
+  transition: all 0.3s;
+  z-index: 99;
+  color: #1f1f1f;
+  font-size: 24px;
+  font-family: "font";
+  line-height: 1;
+  .editbox {
+    width: 600px;
+    height: 1116px;
+    background: #ffffff;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid transparent;
+    padding: 55px 0;
+    box-sizing: border-box;
+    .head {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 45px;
+      .back {
+        width: 19px;
+        height: 33px;
+        background-image: url("~@assets/images/lottery/back.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .title {
+        font-weight: bold;
+        color: #1f1f1f;
+        font-size: 31px;
+      }
+      .close {
+        width: 28px;
+        height: 28px;
+        background-image: url("~@assets/images/icon/close.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .info {
+      margin-top: 50px;
+      padding: 0 50px;
+      .cost {
+        display: flex;
+        justify-content: space-between;
+        font-size: 28px;
+        .right {
+          font-weight: 600;
+        }
+      }
+
+      .line {
+        width: 100%;
+        height: 1px;
+        background: #dddddd;
+        margin-top: 35px;
+      }
+
+      .rule {
+        margin-top: 30px;
+        font-size: 24px;
+        color: #1f1f1f;
+        opacity: 0.5;
+      }
+
+      .random {
+        margin-top: 55px;
+        // width: 500px;
+        height: 90px;
+        line-height: 90px;
+        text-align: center;
+        border: 1px solid #3a3aff; /*no*/
+        border-radius: 45px;
+        color: #3a3aff;
+        font-weight: 600;
+        font-size: 30px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+
+      .list {
+        // padding-top: 20px;
+        position: relative;
+        max-height: 445px;
+        overflow: auto;
+        border-bottom: 1px solid #dddddd;
+        box-sizing: border-box;
+
+        // width: 500px;
+      }
+
+      .buy {
+        background-color: #3a3aff;
+        color: #ffffff;
+        height: 90px;
+        margin-top: 40px;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 90px;
+        text-align: center;
+        border-radius: 45px;
+      }
+    }
+  }
+}

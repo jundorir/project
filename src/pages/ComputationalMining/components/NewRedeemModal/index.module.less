@@ -1,0 +1,162 @@
+.getbackWindow {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 0;
+  border-radius: 0;
+  background: rgba(17, 17, 17, 0.2);
+  transition: all 0.3s;
+  z-index: 99;
+  color: #000000;
+  font-size: 28px;
+  .getbackBox {
+    width: 600px;
+    height: 1120px;
+    max-height: 90vh;
+    overflow: auto;
+    background: #ffffff;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid transparent;
+    .closeImgBox {
+      position: absolute;
+      top: 45px;
+      right: 50px;
+      .closeImg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+  .title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .center {
+    width: 540px;
+    margin: auto;
+    font-size: 28px;
+    font-family: "font";
+    .list {
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+        border-bottom: 1px solid #c9c9c9;
+        .right {
+          font-weight: bold;
+          font-size: 30px;
+        }
+      }
+    }
+
+    .titleLine {
+      margin: 35px 0 20px;
+    }
+
+    .income {
+      width: 100%;
+      height: 100px;
+      background: rgba(236, 236, 236, 0.3);
+      border-radius: 10px;
+      font-size: 36px;
+      line-height: 100px;
+      padding-left: 25px;
+      box-sizing: border-box;
+    }
+
+    .inputbox {
+      width: 100%;
+      height: 100px;
+      background: #ececec;
+      border: 1px solid rgba(58, 58, 255, 0.3);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .input {
+        border: none;
+        outline: none;
+        background: #ececec;
+        height: 80px;
+        padding-left: 20px;
+        width: 310px;
+        font-family: "font";
+        font-size: 42px;
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+        }
+      }
+      .percent {
+        font-size: 28px;
+        right: 190px;
+        position: absolute;
+      }
+      .max {
+        width: 120px;
+        height: 60px;
+        background: #c0c0c0;
+        border-radius: 10px;
+        margin-right: 15px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 60px;
+      }
+    }
+
+    .button {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      .cancleButton {
+        width: 235px;
+        height: 90px;
+        background: #3ad4e2;
+        border-radius: 45px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 90px;
+      }
+      .ensureButton {
+        width: 235px;
+        height: 90px;
+        background: #3a3aff;
+        border-radius: 45px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 90px;
+        &.disabled {
+          background: #c3c3c3;
+          cursor: not-allowed;
+        }
+      }
+    }
+
+    .explain {
+      width: 100%;
+      margin-top: 45px;
+      .head {
+        font-size: 26px;
+        font-weight: 600;
+        color: #1f1f1f;
+        margin-bottom: 35px;
+      }
+      .tip {
+        font-size: 24px;
+        color: #1f1f1f;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

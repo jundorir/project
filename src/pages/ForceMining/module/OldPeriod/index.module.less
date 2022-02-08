@@ -1,0 +1,463 @@
+.contain {
+  margin: auto;
+  width: 650px;
+  border: solid transparent;
+  border-radius: 50px;
+  background: #ffffff;
+  color: #1f1f1f;
+  font-size: 28px;
+  margin-bottom: 35px;
+  margin-top: -110px;
+  font-family: 'font';
+  .inner {
+    margin: 0 38px;
+    .lineone,
+    .linetwo,
+    .linethree,
+    .linefour,
+    .linefive,
+    .linesix {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 45px 0;
+      .lineoneR,
+      .linetwoR,
+      .linethreeR,
+      .linefourR {
+        font-size: 30px;
+        font-weight: 600;
+        color: #1f1f1f;
+      }
+    }
+    // .linesix {
+    //   .linesixL,
+    //   .linesixR {
+    //     height: 89px;
+    //     display: flex;
+    //     // flex-direction: column;
+    //     justify-content: space-between;
+    //     .top {
+    //       color: #1f1f1f55;
+    //     }
+    //     .bottom {
+    //       font-size: 32px;
+    //       font-weight: 600;
+    //     }
+    //   }
+    //   .linesixM {
+    //     width: 1px;
+    //     height: 89px;
+    //     background: #e2e2e2;
+    //   }
+    // }
+    .line {
+      width: 580px;
+      height: 1px;
+      background: #e6e6e6;
+    }
+    .lineone {
+      .lineoneL {
+        font-size: 30px;
+        font-weight: 600;
+        color: #1f1f1f;
+      }
+      .lineoneR {
+        width: 189px;
+        height: 40px;
+        font-size: 22px;
+        font-weight: 400;
+        color: #3a3aff;
+        border: 1px solid #3a3aff55;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .linefour {
+      background: #f0f0f0;
+      border-radius: 30px;
+      .linefourInner {
+        width: 100%;
+        margin: 50px 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .linefourL {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-size: 32px;
+          .price {
+            font-weight: 600;
+          }
+        }
+        .linefourR {
+          width: 128px;
+          height: 60px;
+          background: #3a3aff;
+          border-radius: 30px;
+          font-size: 24px;
+          font-weight: 600;
+          color: #ffffff;
+          line-height: 60px;
+          text-align: center;
+        }
+      }
+    }
+    .linefive {
+      background: #f0f0f0;
+      border-radius: 30px;
+      margin: 30px 0 35px;
+      position: relative;
+      overflow: hidden;
+      .product {
+        width: 580px;
+        height: 230px;
+        position: absolute;
+        top: 0;
+        background: url('~@assets/images/forceMining/product.png');
+        background-size: cover;
+        .productLine {
+          margin: 87px 0 0 40px;
+          .productLineOne {
+            font-size: 33px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 14px;
+          }
+          .productLineTwo {
+            font-size: 28px;
+            font-weight: 300;
+            color: #ffffff20;
+            letter-spacing: 5px;
+          }
+        }
+      }
+      .linefiveInner {
+        width: 100%;
+        margin: 50px 32px 20px;
+        .innerline {
+          width: 100%;
+          height: 1px;
+          background: #e6e6e6;
+          margin: 42px 0;
+        }
+        .current {
+          display: flex;
+          justify-content: space-between;
+          .currentL {
+            font-size: 30px;
+            font-weight: 600;
+          }
+          .currentR {
+            // font-weight: 400;
+            // color: #3a3aff;
+            width: 159px;
+            height: 40px;
+            border: 1px solid #bfbfbf;
+            border-radius: 20px;
+            font-size: 24px;
+            color: #1f1f1f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          // .soldR {
+          //   font-size: 30px;
+          //   font-weight: 600;
+          // }
+        }
+        .totalAndSold {
+          display: flex;
+          margin-bottom: 20px;
+          .sold,
+          .price {
+            width: 50%;
+            .soldL,
+            .priceL {
+              opacity: 0.5;
+              font-size: 26px;
+              margin-bottom: 10px;
+            }
+            .soldR,
+            .priceR {
+              font-size: 30px;
+              font-weight: 600;
+            }
+          }
+          .price {
+            margin-left: 60px;
+          }
+          .totalAndSoldLine {
+            width: 1px;
+            height: 70px;
+            background: #e7e7e7;
+          }
+        }
+        .left {
+          .leftT {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            .leftTR {
+              font-size: 30px;
+              font-weight: 600;
+            }
+          }
+          .leftB {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .leftBL {
+              width: 85%;
+              height: 22px;
+              background: #dfdfdf;
+              border-radius: 10px;
+              .leftBLInner {
+                height: 22px;
+                background: #3a3aff;
+                border-radius: 10px;
+                transition: width 0.5s linear 0s;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // 第一部分内容
+    .hasPledged,
+    .hasPledgedB {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 40px 0;
+      .hasPledgedTL {
+        font-weight: 600;
+      }
+      .hasPledgedTR {
+        width: 128px;
+        height: 60px;
+        background: #ffffff;
+        border: 1px solid #a2a2a2;
+        border-radius: 30px;
+        font-size: 24px;
+        font-weight: 600;
+        color: #1f1f1f;
+        line-height: 60px;
+        opacity: 0.5;
+        text-align: center;
+      }
+      .hasPledgedBL,
+      .hasPledgedBR {
+        width: 50%;
+        .hasPledgedBLT,
+        .hasPledgedBRT {
+          font-size: 36px;
+          font-weight: bold;
+          margin-bottom: 18px;
+        }
+        .hasPledgedBLB,
+        .hasPledgedBRB {
+          font-size: 24px;
+          font-weight: 400;
+          color: #1f1f1f;
+          opacity: 0.5;
+        }
+      }
+      .vertical {
+        width: 1px;
+        height: 82px;
+        background: #d2d2d2;
+        margin: 0 40px;
+      }
+    }
+    .time {
+      width: 100%;
+      background: #f5f5f5;
+      // border: solid transparent;
+      border-radius: 30px;
+      margin-bottom: 35px;
+      display: flex;
+      flex-direction: column;
+      .timeInner {
+        margin: 40px 32px;
+        .timeInnerLine {
+          // margin: 32px 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .timeInnerLineStage {
+            font-size: 28px;
+            color: #ff7272;
+          }
+        }
+        .division {
+          width: 100%;
+          height: 1px;
+          background: #e6e6e6;
+          margin: 32px 0;
+        }
+      }
+      .timing {
+        width: 100%;
+        height: 129px;
+        background: #ff7272;
+        border-radius: 0 0 30px 30px;
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        .timingL {
+          width: 64px;
+          height: 64px;
+          background: url('~@assets/images/forceMining/timing.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          margin: 0 32px;
+        }
+        .timingR {
+          .timingRT {
+            font-size: 24px;
+            margin-bottom: 6px;
+          }
+          .timingRB {
+            font-size: 36px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .all {
+      width: 100%;
+      background: #f5f5f5;
+      border: solid transparent;
+      border-radius: 30px;
+      margin-bottom: 40px;
+      .allInner {
+        margin: 40px 32px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .biggest {
+      width: 100%;
+      // height: 157px;
+      background: #f5f5f5;
+      border: solid transparent;
+      border-radius: 30px;
+      margin-bottom: 35px;
+      .biggestInner {
+        // width: 92%;
+        margin: 40px 32px;
+        .yourData {
+          margin: 32px 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .biggestNum {
+          font-size: 32px;
+          font-weight: 600;
+        }
+        .redword {
+          margin-top: 32px;
+          font-size: 24px;
+          font-weight: 400;
+          color: #ff7272;
+        }
+        .biggestline {
+          width: 100%;
+          height: 1px;
+          background: #e6e6e6;
+        }
+      }
+    }
+    .btn,
+    .graybtn {
+      width: 100%;
+      height: 90px;
+      background: #3a3aff;
+      border-radius: 45px;
+      font-size: 30px;
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 90px;
+      text-align: center;
+      margin: 35px 0;
+      &.disabled {
+        background: #e2e2e2;
+        color: #a1a0a0;
+      }
+    }
+    .graybtn {
+      background: #e2e2e2;
+      color: #a1a0a0;
+    }
+  }
+}
+.instructions,
+.strategy {
+  margin: auto;
+  width: 650px;
+  min-height: 300px;
+  border: solid transparent;
+  border-radius: 50px;
+  background: #ffffff;
+  color: #1f1f1f;
+  font-size: 28px;
+  margin-bottom: 35px;
+  font-family: 'font';
+  .instructionsInner,
+  .strategyInner {
+    margin: 0 38px;
+    .instructionsTitle,
+    .strategyTitle {
+      // width: 100%;
+      // text-align: center;
+      // font-weight: 600;
+      font-size: 30px;
+      font-weight: bold;
+      color: #1f1f1f;
+      text-align: center;
+      margin: 54px auto;
+    }
+    .instructions1,
+    .strategy1 {
+      font-family: PingFang SC;
+      margin-bottom: 35px;
+      line-height: 33px;
+      display: flex;
+      .mobility,
+      .mobilityMining {
+        color: #3a3aff;
+        white-space: nowrap;
+      }
+      .markNum {
+        // width: 32px;
+        // height: 32px;
+        margin-right: 24px;
+        .num {
+          display: block;
+          // margin-top: 4px;
+          width: 33px;
+          height: 33px;
+          background: #3a3aff;
+          border-radius: 16.5px;
+          line-height: 33px;
+          font-size: 28px;
+          color: #fff;
+          text-align: center;
+        }
+      }
+    }
+    .instructions1 {
+      display: flex;
+    }
+  }
+}
+.strategy {
+  margin-bottom: 200px;
+}

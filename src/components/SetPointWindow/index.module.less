@@ -1,0 +1,206 @@
+.getbackWindow {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 0;
+  border-radius: 0;
+  background: rgba(17, 17, 17, 0.2);
+  transition: all 0.3s;
+  z-index: 99;
+  color: #000000;
+  font-size: 28px;
+  .getbackBox {
+    width: 600px;
+    min-height: 320px;
+    max-height: 90vh;
+    overflow: auto;
+    background: #ffffff;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid transparent;
+    .closeImgBox {
+      margin: 36px;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: flex-end;
+      .closeImg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+  .title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    margin-top: 26px;
+  }
+  .center {
+    width: 500px;
+    margin: auto;
+    font-size: 28px;
+    .global {
+      color: #3a3aff;
+      margin-top: 64px;
+    }
+    .line {
+      width: 100%;
+      height: 1px;
+      background: #c9c9c9;
+      margin: 30px 0;
+    }
+    .speed {
+      margin: 35px 0;
+    }
+    .speedChoose {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 58px;
+      .normal,
+      .fast,
+      .timely {
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background: #d6dae7;
+        opacity: 0.8;
+        border-radius: 25px;
+        &.speedChecked {
+          background: #3a3aff;
+          color: #ffffff;
+          opacity: 1;
+        }
+      }
+    }
+    .exchange {
+      color: #3a3aff;
+      margin-top: 20px;
+    }
+    .tolerance {
+      display: flex;
+      align-items: center;
+      margin-bottom: 42px;
+    }
+    .inputbox {
+      width: 500px;
+      height: 97px;
+      background: #f5f5f5;
+      border: 1px solid #c9c9fd;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 35px;
+      .input {
+        border: none;
+        outline: none;
+        background: #f5f5f5;
+        height: 60px;
+        margin-left: 15px;
+        width: 200px;
+        font-family: 'font';
+        font-size: 42px;
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+        }
+      }
+      .percent {
+        margin-right: 42px;
+        opacity: 0.8;
+      }
+    }
+    .checkAllowance {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      .options {
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background: #d6dae7;
+        opacity: 0.8;
+        border-radius: 25px;
+        &.checkoptions {
+          background: #3a3aff;
+          color: #ffffff;
+          opacity: 1;
+        }
+      }
+    }
+    .instructions {
+      font-size: 24px;
+      font-weight: 600;
+      color: #ff2828;
+      margin-bottom: 66px;
+    }
+    .closingTime,
+    .expertMode,
+    .forbidden,
+    .tone {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 36px;
+      .closingTimeL,
+      .expertModeL,
+      .forbiddenL,
+      .toneL {
+        display: flex;
+        align-items: center;
+      }
+      .closingTimeR {
+        width: 120px;
+        height: 60px;
+        background: #f5f5f5;
+        border: 1px solid #c9c9fd;
+        // opacity: 0.5;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+      }
+      .expertModeR,
+      .forbiddenR,
+      .toneR {
+        width: 120px;
+        height: 60px;
+        background: #f5f5f5;
+        border: 1px solid #c9c9fd;
+        border-radius: 30px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        .expertModeRInner,
+        .forbiddenRInner,
+        .toneRInner {
+          width: 40px;
+          height: 40px;
+          background: #ffffff;
+          box-shadow: 0px 11px 43px 0px rgba(191, 191, 191, 0.46);
+          border-radius: 50%;
+          margin: 0 10px;
+          position: absolute;
+          transition: right 0.1s linear 0s;
+          right: 60px;
+          &.open{
+            right: 0;
+            background: #3A3AFF;
+          }
+        }
+      }
+    }
+    .mark {
+      width: 30px;
+      height: 30px;
+      margin-left: 12px;
+    }
+  }
+}

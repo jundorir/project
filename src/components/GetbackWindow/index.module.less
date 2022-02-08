@@ -1,0 +1,138 @@
+.getbackWindow {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 0;
+  border-radius: 0;
+  background: rgba(17, 17, 17, 0.2);
+  transition: all 0.3s;
+  z-index: 99;
+  color: #000000;
+  font-size: 28px;
+  .getbackBox {
+    width: 600px;
+    height: 920px;
+    min-height: 320px;
+    background: #ffffff;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid transparent;
+    .closeImgBox {
+      margin: 36px;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: flex-end;
+      .closeImg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+  .title {
+    font-size: 36px;
+    font-family: PingFang SC;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+  }
+  .center {
+    width: 500px;
+    margin: auto;
+    font-size: 28px;
+    .hasPledged {
+      font-weight: 400;
+      color: #000000;
+      line-height: 40px;
+      margin: 40px 0 20px;
+    }
+    .pledgedShow {
+      width: 500px;
+      height: 97px;
+      background: #ececec;
+      border-radius: 10px;
+      line-height: 107px;
+      .pledgedShowNum {
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 40px;
+        margin: 0 12px 0 26px;
+      }
+    }
+    .hashrate {
+      font-size: 24px;
+      line-height: 40px;
+      margin: 25px 0 60px;
+    }
+    .getscale {
+      margin-bottom: 36px;
+    }
+    .inputbox {
+      width: 500px;
+      height: 97px;
+      background: #ececec;
+      border: 1px solid #3a3aff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .input {
+        border: none;
+        outline: none;
+        background: #ececec;
+        height: 60px;
+        margin-left: 20px;
+        width: 100px;
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+      }
+      }
+      .percent {
+        font-size: 33px;
+        margin-right: 60px;
+      }
+      .max {
+        margin-right: 40px;
+      }
+    }
+    .instructions {
+      opacity: 0.6;
+      font-size: 24px;
+      margin: 30px 0 80px;
+      line-height: 40px;
+      color: #FF2828;
+      font-weight: 600;
+    }
+  }
+  .button {
+    display: flex;
+    .cancleButton {
+      width: 260px;
+      height: 92px;
+      background: #3ad4e2;
+      border-radius: 46px;
+      margin: auto;
+      color: #ffffff;
+      text-align: center;
+      line-height: 92px;
+    }
+    .ensureButton {
+      width: 260px;
+      height: 92px;
+      background: #3a3aff;
+      border-radius: 46px;
+      margin: auto;
+      color: #ffffff;
+      text-align: center;
+      line-height: 92px;
+      &.disabled {
+        background: #c3c3c3;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

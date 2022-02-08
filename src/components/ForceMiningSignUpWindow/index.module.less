@@ -1,0 +1,74 @@
+.getbackWindow {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 0;
+  border-radius: 0;
+  background: rgba(17, 17, 17, 0.2);
+  transition: all 0.3s;
+  z-index: 99;
+  color: #000000;
+  font-size: 28px;
+  font-family: 'font';
+  .getbackBox {
+    width: 600px;
+    max-height: 90vh;
+    min-height: 320px;
+    background: #ffffff;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid transparent;
+    .closeImgBox {
+      margin: 36px;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: flex-end;
+      .closeImg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+  .title {
+    font-size: 36px;
+    font-family: PingFang SC;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+  }
+  .now {
+    width: 100%;
+    margin: 44px 0 26px;
+    text-align: center;
+  }
+  .num {
+    width: 100%;
+    text-align: center;
+    font-size: 42px;
+    font-family: 'font';
+    font-weight: 600;
+    color: #3a3aff;
+  }
+  .isSure {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0 76px;
+  }
+  .button {
+    width: 90%;
+    height: 90px;
+    background: #3a3aff;
+    border-radius: 45px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    line-height: 90px;
+    margin: 64px auto 74px;
+  }
+}

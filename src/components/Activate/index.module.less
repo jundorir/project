@@ -1,0 +1,118 @@
+.activeWindow {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 0;
+  border-radius: 0;
+  background: rgba(17, 17, 17, 0.2);
+  transition: all 0.3s;
+  z-index: 99;
+  color: #000000;
+  font-size: 28px;
+  .activeBox {
+    width: 600px;
+    // height: 920px;
+    height: 85vh;
+    overflow: auto;
+    background: #ffffff;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid transparent;
+    &::-webkit-scrollbar {
+      width: 12px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: linear-gradient(transparent, #dad8d8,transparent );
+    }
+    .closeImgBox {
+      margin: 36px;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: flex-end;
+      .closeImg{
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+  .title {
+    font-size: 36px;
+    font-family: PingFang SC;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+  }
+  .info {
+    margin: 60px auto 30px;
+    width: 520px;
+    height: 40vh;
+    border: 1px solid #3a3aff;
+    border-radius: 10px;
+    overflow: auto;
+    .infoInner {
+      margin: 20px;
+      .infoTitle {
+        font-size: 30px;
+        font-weight: 600;
+        margin: 10px 0;
+      }
+    }
+    .infoContent {
+      font-size: 26px;
+      font-weight: 400;
+      margin: 10px 0;
+      line-height: 40px;
+    }
+  }
+  .agree {
+    width: 520px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    .agreeImg {
+      width: 40px;
+      height: 40px;
+      margin-right: 14px;
+    }
+  }
+  .superior {
+    width: 520px;
+    margin: auto;
+    .inviter {
+      font-weight: 600;
+      color: #000000;
+      line-height: 80px;
+    }
+    .input {
+      height: 90px;
+      width: 500px;
+      background: #ececec30;
+      border: 1px solid #3a3aff;
+      border-radius: 10px;
+      color: #3a3aff;
+      padding: 10px;
+      font-weight: 700;
+      resize: none;
+    }
+  }
+  .button {
+    width: 519px;
+    height: 92px;
+    background: #3a3aff;
+    border-radius: 46px;
+    margin: auto;
+    margin-top: 40px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 92px;
+    margin-bottom: 40px;
+  }
+}

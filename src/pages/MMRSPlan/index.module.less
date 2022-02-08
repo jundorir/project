@@ -1,0 +1,185 @@
+.plan {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  -webkit-user-select: none;
+
+  .banner {
+    height: 380px;
+    width: 100%;
+    position: relative;
+    background-image: url("~@assets/images/DAO/directorIMG.png");
+    background-repeat: no-repeat;
+    background-size: 750px 493px;
+    background-position-y: -112px;
+    overflow: hidden;
+
+    .box {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 0 50px;
+
+      .logo {
+        font-size: 52px;
+        font-weight: bold;
+        margin-top: 60px;
+      }
+
+      .explain {
+        font-size: 26px;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .content {
+    height: 100%;
+    position: relative;
+    padding: 0 50px 65px 50px;
+    flex: 1;
+
+    .blockNumber {
+      margin-top: -150px;
+      height: 60px;
+      background: #f8f4f440;
+      border-radius: 30px;
+      font-size: 26px;
+      font-weight: 400;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      .word {
+        margin-left: 34px;
+      }
+    }
+
+    .info {
+      background-color: #fff;
+      box-shadow: 0px 23px 40px 0px rgba(179, 179, 179, 0.13);
+      border-radius: 50px;
+      height: 780px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      color: #1f1f1f;
+
+      .tips {
+        font-size: 32px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        padding: 50px 35px 0;
+        line-height: 32px;
+        .questionMark {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          background-image: url("~@assets/images/plan/questionMark.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          margin-left: 12px;
+        }
+      }
+      .list {
+        box-sizing: border-box;
+        padding: 25px 35px 25px;
+
+        font-size: 28px;
+        .item {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 100px;
+          border-top: 1px solid #e6e6e6; /*no*/
+
+          &.first {
+            border-top: none;
+          }
+
+          .right {
+            font-size: 30px;
+            font-weight: bold;
+          }
+        }
+      }
+      .incomeBox {
+        width: 650px;
+        height: 350px;
+        background-image: url("~@assets/images/plan/cover.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: #fff;
+        font-size: 26px;
+        position: relative;
+        box-sizing: border-box;
+        padding: 50px 35px 0;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+
+        .head {
+          font-size: 30px;
+          display: flex;
+          align-items: center;
+        }
+
+        .unclaimedIncome {
+          // display: flex;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          align-items: baseline;
+          padding-bottom: 25px;
+          border-bottom: 1px solid rgba(256, 256, 256, 0.4);
+
+          .total {
+            font-size: 48px;
+            line-height: 34px;
+
+            font-weight: bold;
+            font-family: "font";
+            margin-top: 30px;
+
+            span {
+              font-weight: normal;
+              font-size: 28px;
+              margin-left: 10px;
+              font-family: auto;
+            }
+          }
+          .bottom {
+            display: flex;
+            height: 60px;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.7);
+          }
+        }
+
+        .totalClaimedIncome {
+          height: 110px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          border-bottom: 1px solid rgba(256, 256, 256, 0.4);
+        }
+
+        .button {
+          // padding: 18px 38px;
+          background: #fff;
+          text-align: center;
+
+          color: #2772fd;
+          font-weight: bold;
+          border-radius: 30px;
+          position: absolute;
+          right: 35px;
+          top: 63px;
+          width: 128px;
+          height: 60px;
+          line-height: 60px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.detail {
+  height: 100%;
+  position: relative;
+  // flex: 1;
+  width: 750px;
+
+  // .banner {
+  //   background-image: url("~@assets/images/computationalMining/machine.png");
+  //   height: 320px;
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  //   position: relative;
+  //   .alt {
+  //     position: absolute;
+  //     top: 106px;
+  //     left: 91px;
+  //     font-size: 41px;
+  //     font-weight: 600;
+  //     color: #ffffff;
+  //   }
+
+  //   .englishAlt {
+  //     position: absolute;
+  //     top: 161px;
+  //     left: 91px;
+  //     font-size: 28px;
+  //     color: rgba(255, 255, 255, 0.2);
+  //   }
+  // }
+
+  .detailOuterBox {
+    padding: 0 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    .detailBox {
+      padding: 50px 35px;
+      background: #ffffff;
+      border-radius: 50px;
+      margin-bottom: 50px;
+      box-sizing: border-box;
+      color: #1f1f1f;
+      position: relative;
+      box-shadow: 0px 23px 40px 0px rgba(179, 179, 179, 0.13);
+
+      .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 266px;
+        margin: 20px auto 0;
+        .state,
+        .introduce {
+          font-size: 30px;
+          line-height: 30px;
+          font-weight: 600;
+          color: rgba(31, 31, 31, 0.5);
+          .line {
+            height: 6px;
+            border-radius: 3px;
+            width: 100%;
+            margin-top: 16px;
+          }
+          &.checked {
+            color: #1f1f1f;
+            .line {
+              background: #3a3aff;
+            }
+          }
+        }
+      }
+    }
+
+    .jumpButton {
+      width: 100%;
+      height: 90px;
+      background: #3a3aff;
+      border-radius: 45px;
+      font-size: 30px;
+      font-weight: 600;
+      color: #ffffff;
+      text-align: center;
+      line-height: 90px;
+    }
+  }
+}

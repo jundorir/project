@@ -1,0 +1,62 @@
+.incomeBox {
+  height: 336px;
+  width: 100%;
+  background-image: url("~@assets/images/computationalMining/income.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+  box-sizing: border-box;
+  padding: 25px 35px;
+  margin-top: 35px;
+
+  .tips {
+    margin-top: 25px;
+    font-size: 28px;
+  }
+  .receive {
+    padding: 20px 48px;
+    background: #fff;
+    font-size: 26px;
+    text-align: center;
+    color: #3a3aff;
+    font-weight: bold;
+    border-radius: 48px;
+    position: absolute;
+    right: 35px;
+    top: 60px;
+    &.disabled {
+      color: #fff;
+      background: #c3c3c3;
+      pointer-events: none;
+    }
+  }
+  .totalBox {
+    display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 20px;
+    align-items: baseline;
+
+    .total {
+      font-size: 42px;
+      line-height: 42px;
+      font-weight: bold;
+    }
+    .symbol {
+      font-size: 26px;
+      margin-left: 18px;
+    }
+  }
+
+  .bottom {
+    height: 90px;
+    font-size: 26px;
+    line-height: 90px;
+    // align-items: center;
+    margin-top: 34px;
+    border-top: 1px solid rgba(256, 256, 256, 0.3);
+  }
+}
